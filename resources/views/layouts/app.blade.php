@@ -55,7 +55,7 @@
                      <!-- Dropdown -->
                      <li class="nav-item dropdown px-2">
                         <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="color:#000;">
-                        <i class="fas fa-map-marker-alt" style="color: #000;font-size:22px;"></i> {{ __('Explore') }}
+                        <i class="fas fa-map-marker-alt" style="color: #000;"></i> {{ __('Explore') }}
                         </a>
                         <div class="dropdown-menu">
                            <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt" style="color: #e8253b;"></i> {{ __('Trails') }}</a>
@@ -65,7 +65,7 @@
                      <!-- Dropdown -->
                      <li class="nav-item dropdown px-2">
                         <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="color:#000;">
-                        <i class="fas fa-users" style="color: #000;font-size:22px;"></i> {{ __('Teams') }}
+                        <i class="fas fa-users" style="color: #000;"></i> {{ __('Teams') }}
                         </a>
                         <div class="dropdown-menu">
                            <a class="dropdown-item" href="#"><i class="fas fa-calendar-alt" style="color: #e8253b;"></i> {{ __('Events') }}</a>
@@ -73,12 +73,12 @@
                         </div>
                      </li>
                      <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="fas fa-motorcycle tez" style="font-size:22px;"></i> {{ __('Vehicles') }}</a>
+                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="fas fa-motorcycle tez" style=""></i> {{ __('Vehicles') }}</a>
                      </li>
                      <!-- Dropdown -->
                      <li class="nav-item dropdown px-2">
                         <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="color:#000;">
-                        <i class="fas fa-user" style="color: #000;font-size:22px;"></i> {{ __('Social') }}
+                        <i class="fas fa-user" style="color: #000;"></i> {{ __('Social') }}
                         </a>
                         <div class="dropdown-menu">
                            <a class="dropdown-item" href="#"><i class="fas fa-globe-americas" style="color: #e8253b;"></i> {{ __('Social Network') }}</a>
