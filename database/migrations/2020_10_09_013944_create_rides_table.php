@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateRidesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('rides', function (Blueprint $table) {
             $table->uuid('id');
             $table->primary('id');
+            $table->uuid('oid');
             $table->string('name');
-            $table->string('tag')->nullable()->default(NULL);
-            $table->string('email')->unique();
-            $table->enum('role', ['admin', 'mod', 'premium', 'user'])->default('user');
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('description')->nullable()->default(NULL);
+            $table->enum('ridetype', ['quad', 'dirtbike', '4wheeler', 'truck' ,'rockcrawler', 'jeep', 'other'])->nullable()->default(NULL);
+            $table->string('location');
+            $table->string('trail');
             $table->softDeletes()->nullable()->default(NULL);
             $table->timestamps();
         });
@@ -35,6 +34,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('rides');
     }
 }

@@ -34,12 +34,12 @@
          
          /* Handle */
          ::-webkit-scrollbar-thumb {
-         background: #e8253b; 
+         background: #0d6efd!important; 
          }
 
          /* Handle on hover */
          ::-webkit-scrollbar-thumb:hover {
-         background: #e8253b; 
+         background: #0d6efd!important; 
          }
       </style>
    </head>
@@ -121,7 +121,7 @@
                            <center>
                               <img src="https://media.discordapp.net/attachments/669301137861640205/763033677411516416/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:50px;height:50px;">
                               <br>
-                              <h4 style="margin-bottom:0px;padding-bottom:0px;color: #e8253b;font-size:18px;margin-top:7px;">{{Auth::user()->name}}</h4>
+                              <h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;font-size:18px;margin-top:7px;">{{Auth::user()->name}}</h4>
                               <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray;font-size:14px;"><strong>{{Auth::user()->tag}}</strong></p>
                            </center>
                            <hr>

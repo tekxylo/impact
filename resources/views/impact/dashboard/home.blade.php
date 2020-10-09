@@ -129,7 +129,7 @@
          </div>
          <br>
 
-         <div class="card">
+         <!--<div class="card">
             <div class="card-body">
                <h4 class="text-primary" style="color: #e8253b;">Unleash The Fear</h4>
                <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>Shediac, N-B</strong></p>
@@ -166,7 +166,11 @@
                <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker"></i> <strong>85.23KM</strong></p>
                <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-calendar-alt"></i> <strong>Monday, September 28, 2020 at 6:00PM</strong></p>
             </div>
-         </div>
+         </div>-->
+         
+         
+         <strong>You have no past history.</strong><br>
+
          <br>
          <button type="button" class="btn btn-primary">Show Full History</button>
          <br><br>
