@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Vehicle;
+use Auth;
 
 class AccountController extends Controller
 {
@@ -28,6 +30,11 @@ class AccountController extends Controller
 
     public function vehicles()
     {
-        return view('impact/account/vehicles');
+        $vehicles = Vehicle::where('oid', Auth::user()->id)->get()->all();
+        $vehicle_count = Vehicle::where('oid', Auth::user()->id)->count();
+        return view('impact/account/vehicles')->with([
+            'vehicles' => $vehicles,
+            'vehicle_count' => $vehicle_count
+        ]);
     }
 }

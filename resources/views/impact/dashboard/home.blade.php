@@ -100,6 +100,15 @@
          <br>-->
          <div class="card">
             <div class="card-body">
+               <center>
+                  <h2 class="text-primary" style="margin-top:5px;"><i class="fas fa-calendar-alt" aria-hidden="true"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>Your Events</strong></p>
+               </center>
+            </div>
+         </div>
+         <br> 
+         <div class="card">
+            <div class="card-body">
                <h4 class="text-primary" style="color: #e8253b;">Control The Power</h4>
                <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>Shediac, N-B</strong></p>
                <hr>

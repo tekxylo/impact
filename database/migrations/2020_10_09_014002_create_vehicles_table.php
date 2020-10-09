@@ -14,7 +14,13 @@ class CreateVehiclesTable extends Migration
     public function up()
     {
         Schema::create('vehicles', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id');
+            $table->primary('id');
+            $table->uuid('oid');
+            $table->string('vehicle_name');
+            $table->string('model')->nullable()->default('Unknown');
+            $table->enum('type', ['quad', 'dirtbike', '4wheeler', 'truck' ,'rockcrawler', 'jeep', 'side by side', 'other'])->nullable()->default(NULL);
+            $table->softDeletes()->nullable()->default(NULL);
             $table->timestamps();
         });
     }
