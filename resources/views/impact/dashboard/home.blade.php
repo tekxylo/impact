@@ -168,8 +168,29 @@
             </div>
          </div>-->
          
-         
+         @if($ride_count < 1)
          <strong>You have no past history.</strong><br>
+         @endif
+
+         @foreach($rides as $ride)
+         <div class="card">
+            <div class="card-body">
+               <h4 class="text-primary" style="color: #e8253b;">{{$ride->name}}</h4>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>{{$ride->location}}</strong></p>
+               <hr>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-crown"></i> <strong>{{Auth::user()->name}}</strong> </p>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-users"></i> <strong>{{Auth::user()->name}}</strong> </p>
+               
+               
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-motorcycle"></i> <strong>Dirtbike Ride</strong></p>
+               
+               
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker"></i> <strong>0.00KM</strong></p>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-calendar-alt"></i> <strong>{{$ride->created_at}}</strong></p>
+            </div>
+         </div>
+         <br>
+         @endforeach
 
          <br>
          <button type="button" class="btn btn-primary">Show Full History</button>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Ride;
+use Auth;
 
 class DashboardController extends Controller
 {
@@ -23,6 +25,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('impact/dashboard/home');
+        $rides = Ride::where('oid', Auth::user()->id)->get()->all();
+        $ride_count = Ride::where('oid', Auth::user()->id)->count();
+        return view('impact/dashboard/home')->with(['rides' => $rides,'ride_count' => $ride_count]);
     }
 }
