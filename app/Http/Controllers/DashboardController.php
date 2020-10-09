@@ -27,6 +27,6 @@ class DashboardController extends Controller
     {
         $rides = Ride::where('oid', Auth::user()->id)->get()->all();
         $ride_count = Ride::where('oid', Auth::user()->id)->count();
-        return view('impact/dashboard/home')->with(['rides' => $rides,'ride_count' => $ride_count]);
+        return view('impact/dashboard/home')->with(['ride_count' => $ride_count]);
     }
 }

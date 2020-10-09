@@ -21,6 +21,10 @@ Route::get('/account/newride', function () {
     return view('impact/account/newride');
 });
 
+Route::get('/banned', function () {
+    return view('impact/banned');
+});
+
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 

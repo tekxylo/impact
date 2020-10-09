@@ -15,33 +15,29 @@
       <script src="https://kit.fontawesome.com/98982dae42.js" crossorigin="anonymous"></script>
       <link href="//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi" rel="stylesheet" type="text/css"/>
       <style>
-      @import url(//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi);
+         @import url(//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi);
          @font-face {font-family: "Berlin Sans FB Demi"; src: url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.eot"); src: url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.woff") format("woff"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.svg#Berlin Sans FB Demi") format("svg"); }
-
          li::-ms-expand {
          display: none;
          }
-
          /* width */
          ::-webkit-scrollbar {
          width: 5px;
          }
-
          /* Track */
          ::-webkit-scrollbar-track {
          background: #f1f1f1; 
          }
-         
          /* Handle */
          ::-webkit-scrollbar-thumb {
          background: #0d6efd!important; 
          }
-
          /* Handle on hover */
          ::-webkit-scrollbar-thumb:hover {
          background: #0d6efd!important; 
          }
       </style>
+      @livewireStyles
    </head>
    <body>
       <div id="app">
@@ -151,7 +147,6 @@
                            </form>
                         </div>
                      </li>
-                     
                      @endguest
                   </ul>
                </div>
@@ -162,6 +157,7 @@
          </main>
       </div>
       <!-- Scripts -->
+      @livewireScripts
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
    </body>
 </html>

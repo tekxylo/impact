@@ -107,103 +107,29 @@
             </div>
          </div>
          <br> 
-         <div class="card">
-            <div class="card-body">
-               <h4 class="text-primary" style="color: #e8253b;">Control The Power</h4>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>Shediac, N-B</strong></p>
-               <hr>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-crown"></i> <strong>Colb</strong> </p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-truck-monster"></i> <strong>Dirtbike Ride</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-calendar-alt"></i> <strong>Everyday, from 5:00PM to 7:00PM</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;" class="text-secondary"><i class="fas fa-exclamation-circle"></i> <strong>Event In Progress</strong></p>
-               <!--<hr><button type="button" class="btn btn-sm btn-success">Event In Progress</button>
-                  <button type="button" class="btn btn-sm  btn-danger disabled">Not Going</button>
-                  <button type="button" class="btn btn-sm  btn-danger disabled">Cancel Ride</button><br>-->
-               <!--<p style="margin-bottom:0px;padding-bottom:0px;color: #e8253b;"><i class="fas fa-times"></i> <strong>This ride is not cancellable due to it being daily.</strong></p>-->
-            </div>
-         </div>
-         <br>
-         <div class="card">
-            <div class="card-body">
-               <center>
-                  <h2 class="text-primary" style="margin-top:5px;"><i class="fas fa-history"" aria-hidden="true"></i></h2>
-                  <p style="padding:0px;margin:0px;"><strong>History</strong></p>
-               </center>
-            </div>
-         </div>
-         <br> 
-         <div class="input-group">
-         <input type="password" class="form-control" id="inputPassword2" placeholder="Search For Rides" style="height: 20px;">
-         <button type="submit" class="btn btn-primary mb-3">Search</button>
-         </div>
-         <br>
-
+         
+         
          <!--<div class="card">
             <div class="card-body">
-               <h4 class="text-primary" style="color: #e8253b;">Unleash The Fear</h4>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>Shediac, N-B</strong></p>
+               <h4 class="text-primary" style="color: #e8253b;">Control The Power</h4>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>Quebec, Q-C</strong></p>
                <hr>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-crown"></i> <strong>Tek Xylo</strong> </p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-users"></i> <strong>Tek Xylo</strong> </p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-motorcycle"></i> <strong>Dirtbike Ride</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker"></i> <strong>3.33KM</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-calendar-alt"></i> <strong>Tuesday, September 29, 2020 at 3:00AM</strong></p>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-crown"></i> <strong>Team GodX</strong> </p>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-truck-monster"></i> <strong>Dirtbike Ride</strong></p>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-calendar-alt"></i> <strong>October 11, 2020 at 4:30PM</strong></p>
+               <p style="margin-bottom:0px;padding-bottom:0px;" class="text-secondary"><i class="fas fa-exclamation-circle"></i> <strong>Event In Progress</strong></p>
+              <hr><button type="button" class="btn btn-sm btn-success">Event In Progress</button>
+                  <button type="button" class="btn btn-sm  btn-danger disabled">Not Going</button>
+                  <button type="button" class="btn btn-sm  btn-danger disabled">Cancel Ride</button><br>-
+               <p style="margin-bottom:0px;padding-bottom:0px;color: #e8253b;"><i class="fas fa-times"></i> <strong>This ride is not cancellable due to it being daily.</strong></p>
             </div>
          </div>
-         <br>
-         <div class="card">
-            <div class="card-body">
-               <h4 class="text-primary" style="color: #e8253b;">Unleash The Pressure</h4>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>River Glade, N-B</strong></p>
-               <hr>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-crown"></i> <strong>Ykodur</strong> </p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-users"></i> <strong>Ykodur, MANIAC RIDER, Erikk, Janette, Guillaume</strong> </p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-motorcycle"></i> <strong>Dirtbike Ride</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker"></i> <strong>92.12KM</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-calendar-alt"></i> <strong>Tuesday, September 29, 2020 at 3:30PM</strong></p>
-            </div>
-         </div>
-         <br>
-         <div class="card">
-            <div class="card-body">
-               <h4 class="text-primary" style="color: #e8253b;">Unleash The Pressure</h4>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>River Glade, N-B</strong></p>
-               <hr>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-crown"></i> <strong>Ykodur</strong> </p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-users"></i> <strong>Ykodur, MANIAC RIDER, Erikk, Janette, Guillaume</strong> </p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-motorcycle"></i> <strong>Dirtbike Ride</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker"></i> <strong>85.23KM</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-calendar-alt"></i> <strong>Monday, September 28, 2020 at 6:00PM</strong></p>
-            </div>
-         </div>-->
-         
-         @if($ride_count < 1)
-         <strong>You have no past history.</strong><br>
-         @endif
+         <br>-->
 
-         @foreach($rides as $ride)
-         <div class="card">
-            <div class="card-body">
-               <h4 class="text-primary" style="color: #e8253b;">{{$ride->name}}</h4>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker-alt"></i> <strong>{{$ride->location}}</strong></p>
-               <hr>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-crown"></i> <strong>{{Auth::user()->name}}</strong> </p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-users"></i> <strong>{{Auth::user()->name}}</strong> </p>
-               
-               
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-motorcycle"></i> <strong>Dirtbike Ride</strong></p>
-               
-               
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-map-marker"></i> <strong>0.00KM</strong></p>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><i class="fas fa-calendar-alt"></i> <strong>{{$ride->created_at}}</strong></p>
-            </div>
-         </div>
-         <br>
-         @endforeach
+         <center><strong>You have no active events or upcoming events.</strong><br><br></center>
 
-         <br>
-         <button type="button" class="btn btn-primary">Show Full History</button>
-         <br><br>
+         <!-- Impact History Livewire Component -->
+         <livewire:history/>
 
          <div class="card">
             <div class="card-body">
@@ -214,8 +140,8 @@
             </div>
          </div>
          <br> 
-         <strong>You have not configured your motocross training.</strong><br>
-
+         
+         <center><strong>You have not configured your motocross training.</strong><br><br></center>
       </div>
    </div>
 </div>
