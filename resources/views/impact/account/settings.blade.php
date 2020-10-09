@@ -2,7 +2,20 @@
 @section('content')
 <div class="container">
    <div class="row justify-content-center">
-      <div class="col-md-10">
+      <div class="col-md-3">
+            <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            <i class="fas fa-cog"></i> General Settings
+            </a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-smile-beam"></i> Profile Picture</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-fingerprint"></i> Security</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-credit-card"></i> Payment Methods</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-user-secret"></i> Privacy</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-laptop"></i> Connected Devices</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-cogs"></i> Others</a>
+            </div>
+      </div>
+      <div class="col-md-8">
          <div class="card">
             <div class="card-body">
                <center>
