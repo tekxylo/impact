@@ -6,7 +6,7 @@
          <div class="card">
             <div class="card-body">
                <center>
-                  <h2 style="margin-top:5px;color: #e8253b;"><i class="fas fa-cog"></i></h2>
+                  <h2 class="text-primary" style="margin-top:5px;color: #e8253b;"><i class="fas fa-cog"></i></h2>
                   <p style="padding:0px;margin:0px;"><strong>Account Settings</strong></p>
                </center>
             </div>
@@ -55,7 +55,7 @@
          <div class="card">
             <div class="card-body">
                <center>
-                  <h2 style="margin-top:5px;color: #e8253b;"><i class="fas fa-fingerprint"></i></h2>
+                  <h2 class="text-primary" style="margin-top:5px;color: #e8253b;"><i class="fas fa-fingerprint"></i></h2>
                   <p style="padding:0px;margin:0px;"><strong>Security & Authentication</strong></p>
                </center>
             </div>
@@ -63,29 +63,50 @@
          <br>
          <div class="card">
             <div class="card-body">
-            <div class="form-group">
-    <label for="exampleInputPassword1">Current Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
 
-  <div class="form-group">
-    <label for="exampleInputPassword1">New Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
+            <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label">Current Password</label>
+               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="">
+            </div>
 
-  <div class="form-group">
-    <label for="exampleInputPassword1">Confirm Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" >
-  </div>
+            <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label">New Password</label>
+               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="">
+            </div>
+
+            <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="">
+            </div>
 
             <button type="button" class="btn btn-primary float-right">Save Changes</button><br>
+            </div>
+         </div>
+
+         <br>
+         <div class="card">
+            <div class="card-body">
+               <center>
+                  <h2 class="text-primary" style="margin-top:5px;color: #e8253b;"><i class="fas fa-cloud"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>Download Your Data</strong></p>
+               </center>
             </div>
          </div>
          <br>
          <div class="card">
             <div class="card-body">
+            <strong>{{ __('Download your account data.') }}</strong>
+<hr>
+Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.
+<br><br><button type="button" class="btn btn-primary float-right">Download Data</button>
+            </div>
+         </div>
+
+         <br>
+         <div class="card">
+            <div class="card-body">
                <center>
-                  <h2 style="margin-top:5px;color: #e8253b;"><i class="fas fa-trash"></i></h2>
+                  <h2 class="text-primary" style="margin-top:5px;color: #e8253b;"><i class="fas fa-trash"></i></h2>
                   <p style="padding:0px;margin:0px;"><strong>Delete Account</strong></p>
                </center>
             </div>

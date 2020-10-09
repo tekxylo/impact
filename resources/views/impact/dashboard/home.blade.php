@@ -204,6 +204,18 @@
          <br>
          <button type="button" class="btn btn-primary">Show Full History</button>
          <br><br>
+
+         <div class="card">
+            <div class="card-body">
+               <center>
+                  <h2 class="text-primary" style="margin-top:5px;"><i class="fas fa-motorcycle" aria-hidden="true"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>Motocross Training</strong></p>
+               </center>
+            </div>
+         </div>
+         <br> 
+         <strong>You have not configured your motocross training.</strong><br>
+
       </div>
    </div>
 </div>
