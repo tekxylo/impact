@@ -17,7 +17,7 @@
          <div class="card">
             <div class="card-body">
                   <center>
-                  <img src="https://media.discordapp.net/attachments/669301137861640205/763033677411516416/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:75px;height:75px;">
+                  <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}&color=7F9CF5&background=EBF4FF" alt="userprofile" class="img-responsive rounded-circle" style="width:75px;height:75px;">
                      <br><br><h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;">{{Auth::user()->name}}</h4>
                      <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray"><strong>Administrator</strong></p>
                      </center>
@@ -49,35 +49,10 @@
          <br>
       </div>
       <div class="col-md-8">
-         <!--<div class="alert alert-danger" role="alert" style="background-color: #e85225;border-color: #e85225;color: #fff;">
-            <strong>
-               <h1 style="font-size:20px;margin-top:8px;"><i class="fas fa-exclamation-circle"></i> You are being rate limited.</h1>
-            </strong>
-            </div>-->
-         <!--<div class="alert alert-danger" role="alert" style="background-color: #e85225;border-color: #e85225;color: #fff;">
-            <strong><h1 style="font-size:20px;margin-top:8px;"><i class="fas fa-truck-monster"></i> Event Notice</h1>
-            <p>You have a ride awaiting you november 1st from 3AM - 8:30PM! Let's Bounce Some Rocks!</p></strong>
-            </div>-->
-         <!--<div class="alert alert-danger" role="alert" style="background-color: #e8253b;border-color: #e8253b;color: #fff;">
-            <strong><h1 style="font-size:20px;margin-top:8px;"><i class="fas fa-truck-monster"></i> Event Cancellation Notice</h1>
-            <p>Event has been Cancelled! Let's Bounce Some Rocks!</p></strong>
-            </div>-->
-         <!--<div class="alert alert-danger" role="alert" style="background-color: #e8253b;border-color: #e8253b;color: #fff;">
-            <strong><h1 style="font-size:20px;margin-top:8px;"><i class="fas fa-truck-monster"></i> Event Cancellation Notice</h1>
-            <p>Event has been Cancelled until Tomorrow! Time to rock in the rocks!</p></strong>
-            </div>-->
-         <!--<div class="alert alert-danger" role="alert" style="background-color: #9d25e8;border-color: #9d25e8;color: #fff;">
-            <strong><h1 style="font-size:20px;margin-top:8px;"><i class="fas fa-truck-monster"></i> Ride In Progress!</h1>
-            <p>You are currently at this event : Let's Bounce Some Rocks! </p></strong>
-            </div>-->
-         <!--<<div class="alert alert-danger" role="alert" style="background-color: #257ce8;border-color: #257ce8;color: #fff;">
-            <strong><h1 style="font-size:20px;margin-top:8px;"><i class="fas fa-truck-monster"></i> New Vehicles Compatibility</h1>
-            <p>Trucks, Monster Trucks & Jeeps have been added to offroading types.</p></strong>
-            </div>-->
          <div class="card">
             <div class="card-body">
                <center>
-                  <img src="https://media.discordapp.net/attachments/669301137861640205/763033677411516416/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:75px;height:75px;"/>
+                  <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}&color=7F9CF5&background=EBF4FF" alt="userprofile" class="img-responsive rounded-circle" style="width:75px;height:75px;"/>
                   <h2 style="margin-top:5px;">Welcome, {{Auth::user()->name}}!</h2>
                   <button type="button" class="btn btn-sm btn-outline-primary">Create Ride</button>
             <button type="button" class="btn btn-sm btn-outline-primary">Your Team</button>

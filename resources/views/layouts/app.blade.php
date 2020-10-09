@@ -109,30 +109,30 @@
                      </style>
                      <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                           <img src="https://media.discordapp.net/attachments/669301137861640205/763033677411516416/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">
+                           <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}&color=7F9CF5&background=EBF4FF" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">
                            <!--{{ Auth::user()->name }}-->
                            <h4 style="font-size:16px;margin-top:7px;display:inline;color:#000;">{{Auth::user()->name}}</h4>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="min-width: 257px;">
                            <center>
-                              <img src="https://media.discordapp.net/attachments/669301137861640205/763033677411516416/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:50px;height:50px;">
+                              <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}&color=7F9CF5&background=EBF4FF" alt="userprofile" class="img-responsive rounded-circle" style="width:50px;height:50px;">
                               <br>
                               <h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;font-size:18px;margin-top:7px;">{{Auth::user()->name}}</h4>
                               <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray;font-size:14px;"><strong>{{Auth::user()->tag}}</strong></p>
                            </center>
                            <hr>
-                           <a class="dropdown-item" href="/profile/{{Auth::user()->tag}}"/>
+                           <!--<a class="dropdown-item" href="/profile/{{Auth::user()->tag}}"/>
                            <i class="fas fa-user" aria-hidden="true"></i> Profile
-                           </a>
+                           </a>-->
                            <a class="dropdown-item" href="/dashboard"/>
                            <i class="fas fa-home" aria-hidden="true"></i> Dashboard
                            </a>
                            <a class="dropdown-item" href="/account/vehicles"/>
                            <i class="fas fa-truck-monster" aria-hidden="true"></i> Your Vehicles
                            </a>
-                           <a class="dropdown-item disabled" href="/teams/unleashed"/>
+                           <!--<a class="dropdown-item disabled" href="/teams/unleashed"/>
                            <i class="fas fa-flag-checkered" aria-hidden="true"></i> Teams
-                           </a>
+                           </a>-->
                            <a class="dropdown-item" href="/account/settings"/>
                            <i class="fas fa-cog" aria-hidden="true"></i>  Account Settings
                            </a>
