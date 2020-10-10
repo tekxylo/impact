@@ -26,7 +26,7 @@
             <div class="card-body">
                <h4 class="text-primary" style="color: #e8253b;">Ride Dirt Bikes</h4>
                <p style="margin-bottom:0px;padding-bottom:0px;"><strong> This channel focuses on Dirt Biking. Here you will learn the ability to do regular maintenance on your bike and how to ride better. Videos will be posted as often as possible.</strong></p><br>
-               <a href="https://www.youtube.com/channel/UC60YvZ70lwmwCJRpVLb0Vfw/" class="btn btn-sm btn-outline-primary"><i class="fab fa-youtube"></i>  Visit Channel & Subscribe</a>
+               <a href="https://www.youtube.com/channel/UC60YvZ70lwmwCJRpVLb0Vfw?sub_confirmation=1" class="btn btn-sm btn-outline-primary"><i class="fab fa-youtube"></i>  Visit Channel & Subscribe</a>
                <a href="https://www.youtube.com/watch?v=PpHWzHll3d8" class="btn btn-sm btn-outline-secondary"><i class="fab fa-youtube"></i>  Watch Featured Video</a>
 
             </div>

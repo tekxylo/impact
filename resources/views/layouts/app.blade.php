@@ -12,7 +12,7 @@
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
       <!-- Styles -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-      <script src="https://kit.fontawesome.com/98982dae42.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/fontawesome/css/all.css">
       <link href="//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi" rel="stylesheet" type="text/css"/>
       <style>
          @import url(//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi);
@@ -52,39 +52,17 @@
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <!-- Left Side Of Navbar -->
                   <ul class="navbar-nav mr-auto">
-                     <!-- Dropdown -->
-                     <li class="nav-item dropdown px-2">
-                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="color:#000;">
-                        <i class="fas fa-map-marker-alt" style="color: #000;"></i> {{ __('Explore') }}
-                        </a>
-                        <div class="dropdown-menu">
-                           <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt" style="color: #e8253b;"></i> {{ __('Trails') }}</a>
-                           <a class="dropdown-item" href="#"><i class="fas fa-map-marked-alt" style="color: #e8253b;"></i> {{ __('Maps') }}</a>
-                        </div>
-                     </li>
-                     <!-- Dropdown -->
-                     <li class="nav-item dropdown px-2">
-                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="color:#000;">
-                        <i class="fas fa-users" style="color: #000;"></i> {{ __('Teams') }}
-                        </a>
-                        <div class="dropdown-menu">
-                           <a class="dropdown-item" href="#"><i class="fas fa-calendar-alt" style="color: #e8253b;"></i> {{ __('Events') }}</a>
-                           <a class="dropdown-item" href="#"><i class="fas fa-flag-checkered" style="color: #e8253b;"></i> {{ __('Scoreboard') }}</a>
-                        </div>
+                  <li class="nav-item px-2">
+                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-home"></i> {{ __('Dashboard') }}</a>
                      </li>
                      <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="fas fa-motorcycle tez" style=""></i> {{ __('Vehicles') }}</a>
+                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-calendar-alt" style=""></i> {{ __('Events') }}</a>
                      </li>
-                     <!-- Dropdown -->
-                     <li class="nav-item dropdown px-2">
-                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="color:#000;">
-                        <i class="fas fa-user" style="color: #000;"></i> {{ __('Social') }}
-                        </a>
-                        <div class="dropdown-menu">
-                           <a class="dropdown-item" href="#"><i class="fas fa-globe-americas" style="color: #e8253b;"></i> {{ __('Social Network') }}</a>
-                           <a class="dropdown-item" href="#"><i class="fab fa-discord" style="color: #e8253b;"></i> {{ __('Discord') }}</a>
-                           <a class="dropdown-item" href="#"><i class="fas fa-bullhorn" style="color: #e8253b;"></i> {{ __('Announcements') }}</a>
-                        </div>
+                     <li class="nav-item px-2">
+                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-motorcycle" style=""></i> {{ __('Teams') }}</a>
+                     </li>
+                     <li class="nav-item px-2">
+                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-globe-americas" style=""></i> {{ __('Impact Network') }}</a>
                      </li>
                   </ul>
                   <!-- Right Side Of Navbar -->

@@ -12,7 +12,25 @@
             <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-credit-card"></i> Payment Methods</a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-user-secret"></i> Privacy</a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-laptop"></i> Connected Devices</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-cogs"></i> Others</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-cogs"></i> Advanced Settings</a>
+            </div>
+            <br>
+            <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action"><i class="fab fa-youtube"></i> Youtube Channel Manager</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-trophy"></i> Partnership Program</a>
+            </div>
+            <br>
+            @if(Auth::user()->role == "admin")
+            <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-cog"></i> General Admin Settings</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-users"></i> Users</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-cloud"></i> Storage Monitoring</a>
+            </div>
+            <br>
+            @endif
+            <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-book"></i> Policies</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-info-circle"></i> About Impact</a>
             </div>
       </div>
       <div class="col-md-8">

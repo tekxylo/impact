@@ -4,8 +4,8 @@
     <div class="card">
         <div class="card-body">
             <center>
-                <h2 class="text-primary" style="margin-top:5px;"><i class="fas fa-history"" aria-hidden="true"></i></h2>
-                <p style="padding:0px;margin:0px;"><strong>History</strong></p>
+                <h2 class="text-primary" style="margin-top:5px;"><i class="fad fa-motorcycle" aria-hidden="true"></i></h2>
+                <p style="padding:0px;margin:0px;"><strong>Rides</strong></p>
             </center>
         </div>
     </div>
