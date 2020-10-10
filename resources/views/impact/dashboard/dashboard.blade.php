@@ -50,9 +50,9 @@
             <button wire:click="setPage('events')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'events') active @endif"><i class="far fa-calendar-alt"></i> Events</button>
             <button wire:click="setPage('history')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'history') active @endif"><i class="far fa-motorcycle"></i>  Rides</button>
             <button wire:click="setPage('vehicles')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'vehicles') active @endif"><i class="far fa-truck-monster"></i>  Vehicles</button>
-            <button wire:click="setPage('chat')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'chat') active @endif disabled"><i class="far fa-comments"></i> Chats</button>
-            <a href="#" class="list-group-item list-group-item-action"><i class="far fa-globe-americas"></i> Impact Network</a>
-            <a href="#" class="list-group-item list-group-item-action disabled"><i class="far fa-flag-checkered"></i> Your Teams</a>
+            <button wire:click="setPage('chat')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'chat') active @endif"><i class="far fa-comments"></i> Chats</button>
+            <button wire:click="setPage('network')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'network') active @endif"><i class="far fa-globe-americas"></i> Impact Network</button>
+            <button wire:click="setPage('teams')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'teams') active @endif"><i class="far fa-flag-checkered"></i> Your Teams</button>
             <a href="/account/settings" class="list-group-item list-group-item-action"><i class="far fa-cog"></i> Account Settings</a>
             </div>
             <br>
@@ -78,7 +78,15 @@
          @endif
 
          @if($active == 'chat')
-         <strong>This feature has not been implemented yet!</strong>
+         <livewire:notimplemented/>
+         @endif
+
+         @if($active == 'network')
+         <livewire:noentry/>
+         @endif
+
+         @if($active == 'teams')
+         <livewire:noentry/>
          @endif
       
       </div>

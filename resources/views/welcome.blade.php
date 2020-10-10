@@ -11,13 +11,13 @@
             <hr style="width:30%;">
 			<h1>Welcome to Impact!</h1>
 
-            This application will help you during your offroading life! <br><strong>Ver 5.3.7 Beta</strong>
+            This application will help you during your offroading life! <br><strong>Ver 5.41.2 Release</strong>
 
             <hr>
 
 
                <center>
-                  <h2 class="text-primary" style="margin-top:5px;"><i class="fas fa-bullhorn" aria-hidden="true"></i></h2>
+                  <h2 class="text-primary" style="margin-top:5px;"><i class="far fa-megaphone"></i></h2>
                   <p style="padding:0px;margin:0px;"><strong>Official Partnered Channels</strong></p>
                </center>
 
@@ -31,8 +31,18 @@
 
             </div>
          </div>
+         <br>
+            <div class="card">
+            <div class="card-body">
+               <h4 class="text-primary" style="color: #e8253b;">Bike Life</h4>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><strong>Drone stuff and more awesome stuff!</strong></p><br>
+               <a href="https://www.youtube.com/channel/UCFaE53nRwd9ElWhX66hmhzQ?sub_confirmation=1" class="btn btn-sm btn-outline-primary"><i class="fab fa-youtube"></i>  Visit Channel & Subscribe</a>
+               <a href="https://youtu.be/Fr7ESj-Knno" class="btn btn-sm btn-outline-secondary"><i class="fab fa-youtube"></i>  Watch Featured Video</a>
+
+            </div>
             </center>
         </div>
+        
     </div>
 </div>
 @endsection

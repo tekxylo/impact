@@ -7,3 +7,4 @@
             </div>
          </div>
          <br>
+         <center><p>You have no upcoming events.</p></center>

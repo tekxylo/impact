@@ -53,7 +53,7 @@
                   <!-- Left Side Of Navbar -->
                   <ul class="navbar-nav mr-auto">
                   <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-home"></i> {{ __('Dashboard') }}</a>
+                        <a class="nav-link text-primary" href="/dashboard" style="color:#000;"><i class="fad fa-home"></i> {{ __('Dashboard') }}</a>
                      </li>
                      <li class="nav-item px-2">
                         <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-calendar-alt" style=""></i> {{ __('Events') }}</a>

@@ -21,7 +21,7 @@ class History extends Component
     {
         $ride_name = '%' . $this->ride_name . '%';
 
-        return view('livewire.history', [
+        return view('impact.dashboard.history', [
             'rides' => Ride::where('name', 'LIKE', $ride_name)->paginate(3)
         ]);
     }

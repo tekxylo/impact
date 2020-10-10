@@ -18,7 +18,7 @@ class Vehicles extends Component
         $v_name = '%' . $this->v_name . '%';
 
         return view('impact.dashboard.vehicles', [
-            'vehicles' => Vehicle::where('vehicle_name', 'LIKE', $v_name)->paginate(1)
+            'vehicles' => Vehicle::where('vehicle_name', 'LIKE', $v_name)->paginate(15)
         ]);
     }
 }
