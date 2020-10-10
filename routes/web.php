@@ -22,7 +22,7 @@ Route::get('/account/newride', function () {
 });
 
 Route::get('/banned', function () {
-    return view('impact/banned');
+    return view('errors/banned');
 });
 
 
