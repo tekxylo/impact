@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Dashboard\Components;
 
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Ride;
 use Auth;
 
-class History extends Component
+class Rides extends Component
 {
     use WithPagination;
 
@@ -21,7 +21,7 @@ class History extends Component
     {
         $ride_name = '%' . $this->ride_name . '%';
 
-        return view('impact.dashboard.history', [
+        return view('impact.dashboard.components.rides', [
             'rides' => Ride::where('name', 'LIKE', $ride_name)->paginate(3)
         ]);
     }

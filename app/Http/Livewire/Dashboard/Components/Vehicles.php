@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Dashboard\Components;
 
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -17,7 +17,7 @@ class Vehicles extends Component
     {
         $v_name = '%' . $this->v_name . '%';
 
-        return view('impact.dashboard.vehicles', [
+        return view('impact.dashboard.components.vehicles', [
             'vehicles' => Vehicle::where('vehicle_name', 'LIKE', $v_name)->paginate(15)
         ]);
     }

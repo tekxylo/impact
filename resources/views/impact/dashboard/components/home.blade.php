@@ -36,20 +36,44 @@
                </div>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-12">
         <br>
-            <!--<div class="card">
+            <div class="card">
                <div class="card-body">
+               <center>
+                  <h2 style="margin-top:5px;" class="text-primary"><i class="far fa-megaphone"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>News & Updates</strong></p>
+               </center>
                </div>
-            </div>-->
-            <!---->
-        </div>
-        <div class="col-sm-6">
-        <br>
-            <!--<div class="card">
+            </div>
+
+            <br>
+            
+            <div class="card">
                <div class="card-body">
+                  <h2 style="margin-top:5px;" class="text-primary"><i class="fad fa-cloud-upload"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>Impact Update V5.47.2 Released!</strong></p>
+                  <hr>
+                  <h5>Change Notes</h5>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-user-secret text-primary"></i> Improved Privacy & Transparency</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-fingerprint text-primary"></i> Improved Security & Authentication Technology</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-browser text-primary"></i> Massive UI Changes</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-globe-americas text-primary"></i> Introducing New Impact Social Network</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-trophy text-primary"></i> New Official Partnership System</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-cog text-primary"></i> New Account Settings Page</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-bug text-primary"></i> Fixed Multiple Bugs</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-info-circle text-primary"></i> Fly Racing "Time to Fly" ???</strong></p>
                </div>
-            </div>-->
-            <!---->
+            </div>
+            <br>
+            <div class="card">
+               <div class="card-body">
+                  <h2 style="margin-top:5px;" class="text-primary"><i class="fad fa-trophy"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>Impact is now sponsored by G-Portal!</strong></p>
+                  <hr>
+                  <img src="/gportal.png" alt="userprofile" class="img-responsive" style="width:80px;">
+               </div>
+            </div>
+            
         </div>
     </div>

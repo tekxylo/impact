@@ -66,27 +66,27 @@
 
 
          @if($active == 'events')
-         <livewire:events/>
+         <livewire:dashboard.components.events/>
          @endif
 
          @if($active == 'history')
-         <livewire:history/>
+         <livewire:dashboard.components.rides/>
          @endif
 
          @if($active == 'vehicles')
-         <livewire:vehicles/>
+         <livewire:dashboard.components.vehicles/>
          @endif
 
          @if($active == 'chat')
-         <livewire:notimplemented/>
+         <livewire:errors.error5003/>
          @endif
 
          @if($active == 'network')
-         <livewire:noentry/>
+         <livewire:errors.error5002/>
          @endif
 
          @if($active == 'teams')
-         <livewire:noentry/>
+         <livewire:errors.error5002/>
          @endif
       
       </div>
