@@ -45,7 +45,7 @@
             </div>
          </div>
          <br>
-         <div class="list-group">
+         <div class="list-group ">
             <button wire:click="setPage('home')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'home') active @endif" aria-current="true"><i class="far fa-home"></i> Dashboard</button>
             <button wire:click="setPage('events')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'events') active @endif"><i class="far fa-calendar-alt"></i> Events</button>
             <button wire:click="setPage('history')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'history') active @endif"><i class="far fa-motorcycle"></i>  Rides</button>

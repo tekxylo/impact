@@ -4,10 +4,63 @@ body {
 }
 
 .bg-white {
-    background-color: #1f1f1f;
+    background-color: #1f1f1f !important;
     color: #fff;
 }
 
 .card {
     background-color: #1d1d1d;
+}
+
+h4 {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.list-group-item {
+    background-color: #1d1d1d;
+    color : #fff;
+}
+
+.list-group-item.active:hover{
+    background-color: #0d6efd !important;
+}
+
+.list-group-item:hover {
+    background-color: #2d2d2d;
+    color : #fff;
+}
+
+
+.progress {
+    background-color: #2d2d2d;
+}
+
+@import url(//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi);
+@font-face {font-family: "Berlin Sans FB Demi"; src: url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.eot"); src: url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.woff") format("woff"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.svg#Berlin Sans FB Demi") format("svg"); }
+li::-ms-expand {
+display: none;
+}
+/* width */
+::-webkit-scrollbar {
+width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #2d2d2d; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #0d6efd!important; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #0d6efd!important; 
 }

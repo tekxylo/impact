@@ -15,29 +15,6 @@
       <link rel="stylesheet" href="/fontawesome/css/all.css">
       <link rel="stylesheet" href="/css/dark-mode.css">
       <link href="//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi" rel="stylesheet" type="text/css"/>
-      <style>
-         @import url(//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi);
-         @font-face {font-family: "Berlin Sans FB Demi"; src: url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.eot"); src: url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.woff") format("woff"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.svg#Berlin Sans FB Demi") format("svg"); }
-         li::-ms-expand {
-         display: none;
-         }
-         /* width */
-         ::-webkit-scrollbar {
-         width: 5px;
-         }
-         /* Track */
-         ::-webkit-scrollbar-track {
-         background: #f1f1f1; 
-         }
-         /* Handle */
-         ::-webkit-scrollbar-thumb {
-         background: #0d6efd!important; 
-         }
-         /* Handle on hover */
-         ::-webkit-scrollbar-thumb:hover {
-         background: #0d6efd!important; 
-         }
-      </style>
       @livewireStyles
    </head>
    <body>
@@ -45,7 +22,7 @@
          <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                <a class="navbar-brand" href="{{ url('/') }}">
-               <img src="/impact.png" alt="Italian Trulli" style="width: 200px;"><br>
+               <img src="/tw-impact.png" alt="Italian Trulli" style="width: 200px;"><br>
                </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                <span class="navbar-toggler-icon"></span>
@@ -54,16 +31,16 @@
                   <!-- Left Side Of Navbar -->
                   <ul class="navbar-nav mr-auto">
                   <li class="nav-item px-2">
-                        <a class="nav-link text-primary" href="/dashboard" style="color:#000;"><i class="fad fa-home"></i> {{ __('Dashboard') }}</a>
+                        <a class="nav-link text-primary" href="/dashboard"><i class="fas fa-home"></i> {{ __('Dashboard') }}</a>
                      </li>
                      <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-calendar-alt" style=""></i> {{ __('Events') }}</a>
+                        <a class="nav-link" href="#account/myvehicles"><i class="far fa-calendar-alt" style=""></i> {{ __('Events') }}</a>
                      </li>
                      <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-motorcycle" style=""></i> {{ __('Teams') }}</a>
+                        <a class="nav-link" href="#account/myvehicles"><i class="far fa-motorcycle" style=""></i> {{ __('Teams') }}</a>
                      </li>
                      <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#000;"><i class="far fa-globe-americas" style=""></i> {{ __('Impact Network') }}</a>
+                        <a class="nav-link" href="#account/myvehicles"><i class="far fa-globe-americas" style=""></i> {{ __('Impact Network') }}</a>
                      </li>
                   </ul>
                   <!-- Right Side Of Navbar -->
