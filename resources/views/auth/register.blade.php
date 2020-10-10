@@ -14,7 +14,7 @@
         <div class="col-md-10">
                         <center>
                         <br>
-                        <img class="mb-3" src="impact.png" alt="" width="272">
+                        <img class="mb-3" src="impact-w.png" alt="" width="272">
                         <br><br>
                         </center>
                         <input id="name" type="text" placeholder="Name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>

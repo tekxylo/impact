@@ -11,16 +11,6 @@
          <br>
          <div class="input-group">
         <input wire:model="v_name" type="text" class="form-control" placeholder="Search For Vehicles" style="height: 20px;">
-        <select id="disabledSelect" class="form-select">
-                     <option>All</option>
-                     <option>Dirtbike</option>
-                     <option>ATV</option>
-                     <option>4 Wheeler</option>
-                     <option>Truck</option>
-                     <option>Rock Crawler</option>
-                     <option>Side By Side</option>
-                     <option>Quad</option>
-               </select>
         <!--<button type="submit" class="btn btn-primary mb-3">Search</button>-->
         </div>
         <br>

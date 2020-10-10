@@ -7,7 +7,7 @@
         <div class="col-md-8">
 		
 			<center>
-			<img src="impact.png" alt="Italian Trulli" style="width: 200px;"><br>
+			<img src="impact-w.png" alt="Italian Trulli" style="width: 200px;"><br>
             <hr style="width:30%;">
 			<h1>Welcome to Impact!</h1>
 

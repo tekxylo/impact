@@ -1,5 +1,5 @@
 body {
-    background-color: #121212 !important;
+    background-color: #12151c !important;
     color: #fff;
 }
 
@@ -8,8 +8,13 @@ body {
     color: #fff;
 }
 
+.bg-impact {
+    background-color: #1B222C;
+}
+
 .card {
-    background-color: #1d1d1d;
+    background-color: #191d26;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
 }
 
 h4 {
@@ -25,22 +30,47 @@ h4 {
 }
 
 .list-group-item {
-    background-color: #1d1d1d;
+    background-color: #191d26;
     color : #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    box-shadow:none;
+    outline:none;
 }
 
 .list-group-item.active:hover{
     background-color: #0d6efd !important;
+    color: #fff;
+    outline:none;
 }
 
 .list-group-item:hover {
-    background-color: #2d2d2d;
-    color : #fff;
+    /*background-color: #1d1d1d;*/
+    background-color: #191d26;
+    color : #0d6efd;
+    outline:none;
 }
 
+.list-group-item:focus {
+    /*background-color: #1d1d1d;*/
+    background-color: #191d26;
+    color : #0d6efd;
+    outline:none;
+}
+
+.list-group-item.active:focus {
+    background-color : #0d6efd;
+    color: #fff;
+    outline:none;
+}
+
+.list-group-item button {
+    /*background-color: #1d1d1d;*/
+    background-color: #191d26;
+    outline:none;
+}
 
 .progress {
-    background-color: #2d2d2d;
+    background-color: #12151c;
 }
 
 @import url(//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi);
@@ -54,7 +84,7 @@ width: 5px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-background: #2d2d2d; 
+background: #191d26 !important; 
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -63,4 +93,80 @@ background: #0d6efd!important;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: #0d6efd!important; 
+}
+
+.dropdown-menu {
+    background-color: #20252f;
+    color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #0d6efd ;
+}
+
+.form-control .impact-control {
+    background-color: #191d27;
+    border: 1px solid #191d27;
+}
+
+.form-control {
+    color: #a0a2a5;
+    background-color:#2a3340;
+    border: 1px solid #2a3340;
+}
+
+.form-control:focus {
+    color: #a0a2a5;
+    background-color: #2a3340;
+    border: 1px solid #2a3340;
+    box-shadow: none;
+}
+
+.form-select {
+    background-color:#2a3340;
+    border: 1px solid #2a3340;
+    color: #a0a2a5;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%a0a2a5' stroke='%a0a2a5' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e")
+}
+
+.form-select:focus {
+    background-color:#2a3340;
+    border: 1px solid #2a3340;
+    color: #a0a2a5;
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%a0a2a5' stroke='%a0a2a5' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e")
+}
+
+.form-file-label {
+    border-color: #2a3340;
+    box-shadow: none;
+}
+
+.form-file:focus {
+    border-color: #2a3340;
+    box-shadow: none;
+}
+
+.form-file-text {
+    background-color: #2a3340;
+}
+
+.form-file-button {
+    background-color: #2a3340;    
+}
+
+.page-link {
+    background-color: #191d26;
+    border-color: #191d26;
+}
+
+.disabled .page-link {
+    background-color: #191d26 !important;
+    border-color: #191d26 !important;
 }

@@ -48,7 +48,27 @@
             </div>
 
             <br>
-            
+            <div class="card">
+               <div class="card-body">
+                  <h2 style="margin-top:5px;" class="text-primary"><i class="fad fa-viruses"></i></h2>
+                  <p style="padding:0px;margin:0px;"><i class="far fa-thumbtack text-primary"></i> <strong>Coronavirus Update for Moncton Area</strong></p>
+                  <hr>
+                  <p style="padding:0px;margin:0px;">Due to a recent outbreak in Moncton, NB we are disabling the <strong><i class="fad fa-user text-primary"></i> Invite Members</strong> feature to protect our users.</p>
+                 
+               </div>
+            </div>
+            <br>
+            <div class="card">
+               <div class="card-body">
+                  <h2 style="margin-top:5px;" class="text-primary"><i class="fad fa-cloud-upload"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>Impact Update V5.48.2 Released!</strong></p>
+                  <hr>
+                  <h5>Change Notes</h5>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-moon text-primary"></i> New Dark Theme</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-bug text-primary"></i> Fixed Multiple Bugs</strong></p>
+               </div>
+            </div>
+            <br>
             <div class="card">
                <div class="card-body">
                   <h2 style="margin-top:5px;" class="text-primary"><i class="fad fa-cloud-upload"></i></h2>
