@@ -24,7 +24,7 @@
                <p style="margin-bottom:5px;padding-bottom:0px;"><strong>1 | 3000/10000 OXP</strong></p>
                <div class="progress" style="    height: 5px;">
                   <div class="progress-bar bg-primary" role="progressbar" style="width: 15%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-               </div>
+               </div>z
                <br>
                <h4 style="font-size:18px;"><i class="fas fa-map-marker"></i> Distance</h4>
                <p style="margin-bottom:0px;padding-bottom:0px;"><strong>0km</strong></p>
@@ -61,7 +61,7 @@
          <!-- Livewire Components -->
 
          @if($active == 'home')
-         <livewire:dashhome/>
+         <livewire:dashboard.components.home/>
          @endif
 
 

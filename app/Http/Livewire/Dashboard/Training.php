@@ -4,10 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class Dashhome extends Component
+class Training extends Component
 {
     public function render()
     {
-        return view('impact.dashboard.dashhome');
+        return view('livewire.training');
     }
 }
