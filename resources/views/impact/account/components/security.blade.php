@@ -1,38 +1,5 @@
 <div>
-<div class="card">
-            <div class="card-body">
-               <center>
-                  <h2 class="text-primary" style="margin-top:5px;color: #e8253b;"><i class="fad fa-fingerprint"></i></h2>
-                  <p style="padding:0px;margin:0px;"><strong>Security & Authentication</strong></p>
-               </center>
-            </div>
-         </div>
-         <br>
-         <div class="card">
-            <div class="card-body">
-            <strong><i class="far fa-lock-alt"></i> {{ __('Update Password') }}</strong>
-<hr>
-{{ __('Ensure your account is using a long, random password to stay secure.') }}
-<br><br>
-            <div class="mb-3">
-               <label for="exampleInputEmail1" class="form-label">Current Password</label>
-               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="">
-            </div>
-
-            <div class="mb-3">
-               <label for="exampleInputEmail1" class="form-label">New Password</label>
-               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="">
-            </div>
-
-            <div class="mb-3">
-               <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
-               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="">
-            </div>
-
-            <button type="button" class="btn btn-primary float-right" disabled>Save Changes</button><br>
-            </div>
-         </div>
-         <br>
+<livewire:account.securitypassword/>
          <div class="card">
             <div class="card-body">
             <strong><i class="fal fa-mobile-alt"></i> {{ __('Two Factor Authentication') }}</strong>

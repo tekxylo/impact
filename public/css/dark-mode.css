@@ -121,6 +121,14 @@ background: #0d6efd!important;
     border: 1px solid #2a3340;
 }
 
+.form-control:disabled .form-control[readonly] {
+    color: #a0a2a5;
+    background-color:#2a3340 !important;
+    border: 1px solid #2a3340;
+}
+
+
+
 .form-control:focus {
     color: #a0a2a5;
     background-color: #2a3340;
