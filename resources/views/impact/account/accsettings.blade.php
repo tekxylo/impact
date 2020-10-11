@@ -3,7 +3,7 @@
       <div class="col-md-3">
             <div class="list-group">
             <button wire:click="setPage('general')" class="list-group-item list-group-item-action @if($active == 'general') active @endif" aria-current="true"><i class="fas fa-cog"></i> General Settings</button>
-            <button wire:click="setPage('profilepicture')" class="list-group-item list-group-item-action @if($active == 'profilepicture') active @endif"><i class="far fa-smile-beam"></i> Profile Picture</button>
+            <button disabled wire:click="setPage('profilepicture')" class="list-group-item list-group-item-action @if($active == 'profilepicture') active @endif"><i class="far fa-smile-beam"></i> Profile Picture</button>
             <button wire:click="setPage('security')" class="list-group-item list-group-item-action @if($active == 'security') active @endif"><i class="far fa-fingerprint"></i> Security</button>
             <button href="#" class="list-group-item list-group-item-action" disabled><i class="far fa-credit-card"></i> Payment Methods</button>
             <button href="#" class="list-group-item list-group-item-action" disabled><i class="far fa-user-secret"></i> Privacy</button>
@@ -26,7 +26,7 @@
             @endif
             <div class="list-group">
             <button class="list-group-item list-group-item-action" disabled><i class="far fa-book"></i> Policies</button>
-            <a href="#" class="list-group-item list-group-item-action"><i class="far fa-info-circle"></i> About Impact</a>
+            <button disabled href="#" class="list-group-item list-group-item-action"><i class="far fa-info-circle"></i> About Impact</button>
             </div>
       </div>
       <div class="col-md-8">

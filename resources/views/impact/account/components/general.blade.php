@@ -10,31 +10,46 @@
          <br>
 <div class="card">
             <div class="card-body">
+            <strong><i class="far fa-cog"></i> {{ __('Profile Information') }}</strong>
+<hr>
+{{ __('Update your account\'s profile information and email address.') }}
+<br><br>
+            @if($status == "success")
+               <p class="text-success">
+                           <i class="fad fa-check-circle"></i> Saved!
+               </p>
+               @endif
 
+            <form wire:submit.prevent="updateprofileinformation">
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Name</label>
-               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{Auth::user()->name}}">
+               <input type="text" class="form-control" wire:model="name" style="background-color:#2a3340 !important;">
             </div>
 
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Tag</label>
-               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{Auth::user()->tag}}">
+               <input type="text" class="form-control" wire:model="tag" value="{{Auth::user()->tag}}" style="background-color:#2a3340 !important;">
             </div>
 
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Email address</label>
-               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{Auth::user()->email}}">
+               <input type="email" class="form-control" wire:model="email" value="{{Auth::user()->email}}" style="background-color:#2a3340 !important;">
                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+               @if(!Auth::user()->email_verified_at)
+               <p class="text-danger">
+                           <i class="fad fa-times-hexagon"></i> This email has not been verified!
+               </p>
+               @endif
             </div>
 
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Favorite Trail</label>
-               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="Malakoff Rd (Teal Trail)">
+               <input type="text" class="form-control" wire:model="fav_trail" value="Malakoff Rd (Teal Trail)" style="background-color:#2a3340 !important;">
             </div>
 
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Favorite Vehicle Type</label>
-               <select id="disabledSelect" class="form-select">
+               <select id="disabledSelect" class="form-select" style="background-color:#2a3340 !important;">
                <option>Dirtbike</option>
                      <option>ATV</option>
                      <option>4 Wheeler</option>
@@ -43,8 +58,8 @@
                      <option>Side By Side</option>
                </select>
             </div>
-
-               <button type="button" class="btn btn-primary float-right">Save Changes</button><br>
+               <button type="submit" class="btn btn-primary float-right">Save Changes</button><br>
+               </form>
             </div>
          </div>
 </div>
