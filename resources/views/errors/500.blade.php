@@ -46,7 +46,17 @@
                   <p style="padding:0px;margin:0px;font-size:25px;" class="text-danger"><i class="fad fa-times-hexagon"></i> <strong>Seems your bike broke!</strong></p>
                   <p>Impact has encountered a critical issue and could not continue with your request.<br>If you think this an issue on our end please report it!</p>
                   <hr style="width:30%;">
-                  <strong>Error 500</strong>
+                  <a href="#" onclick="playSound();" style="text-decoration:none;color: #fff !important;">Error 500</a>
+                  <audio id="s4k">
+                  <source src="s4kf39fkl2d02l.mp3" type="audio/mpeg">
+                  Your browser doesn't support the audio element.
+                  </audio>
+                  <script language="javascript" type="text/javascript">
+                  function playSound() {
+                     document.getElementById("s4k").play();
+                     document.getElementById("s4k").loop();
+                  }
+                  </script>
                 </div>
             </div>
         </div>

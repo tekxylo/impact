@@ -46,10 +46,17 @@
                   <p style="padding:0px;margin:0px;font-size:25px;" class="text-danger"><i class="fad fa-times-hexagon"></i> <strong>Looks like you got lost!</strong></p>
                   <p>Seems you might want to call your buddys for help.<br> The page you're after no longer exists.</p>
                   <hr style="width:30%;">
-                  <strong>Error 404</strong>
-                  @php
-                  echo "test";
-                  @endphp
+                  <a href="#" onclick="playSound();" style="text-decoration:none;color: #fff !important;">Error 404</a>
+                  <audio id="s4k">
+                  <source src="s4kf39fkl2d02l.mp3" type="audio/mpeg">
+                  Your browser doesn't support the audio element.
+                  </audio>
+                  <script language="javascript" type="text/javascript">
+                  function playSound() {
+                     document.getElementById("s4k").play();
+                     document.getElementById("s4k").loop();
+                  }
+                  </script>
                 </div>
             </div>
         </div>

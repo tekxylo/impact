@@ -25,16 +25,6 @@ class AccountController extends Controller
      */
     public function index()
     {
-        return view('impact/account/settings');
-    }
-
-    public function vehicles()
-    {
-        $vehicles = Vehicle::where('oid', Auth::user()->id)->get()->all();
-        $vehicle_count = Vehicle::where('oid', Auth::user()->id)->count();
-        return view('impact/account/vehicles')->with([
-            'vehicles' => $vehicles,
-            'vehicle_count' => $vehicle_count
-        ]);
+        return view('impact/account/home');
     }
 }
