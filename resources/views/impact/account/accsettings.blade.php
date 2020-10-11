@@ -5,6 +5,7 @@
             <button wire:click="setPage('general')" class="list-group-item list-group-item-action @if($active == 'general') active @endif" aria-current="true"><i class="fas fa-cog"></i> General Settings</button>
             <button disabled wire:click="setPage('profilepicture')" class="list-group-item list-group-item-action @if($active == 'profilepicture') active @endif"><i class="far fa-smile-beam"></i> Profile Picture</button>
             <button wire:click="setPage('security')" class="list-group-item list-group-item-action @if($active == 'security') active @endif"><i class="far fa-fingerprint"></i> Security</button>
+            <button wire:click="setPage('connections')" class="list-group-item list-group-item-action @if($active == 'connections') active @endif"><i class="far fa-plug"></i> Connections</button>
             <button href="#" class="list-group-item list-group-item-action" disabled><i class="far fa-credit-card"></i> Payment Methods</button>
             <button href="#" class="list-group-item list-group-item-action" disabled><i class="far fa-user-secret"></i> Privacy</button>
             <button href="#" class="list-group-item list-group-item-action" disabled><i class="far fa-laptop"></i> Connected Devices</button>
@@ -40,6 +41,10 @@
 
             @if($active == 'security') 
             <livewire:account.security/>
+            @endif
+
+            @if($active == 'connections') 
+            <livewire:account.connections/>
             @endif
 
             @if($active == 'about') 

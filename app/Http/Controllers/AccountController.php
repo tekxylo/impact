@@ -8,6 +8,8 @@ use Auth;
 
 class AccountController extends Controller
 {
+    public $view;
+
     /**
      * Create a new controller instance.
      *
@@ -25,6 +27,8 @@ class AccountController extends Controller
      */
     public function index()
     {
-        return view('impact/account/home');
+        return view('impact/account/home',[
+            'view' => $this->view
+        ]);
     }
 }

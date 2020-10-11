@@ -28,8 +28,11 @@ Route::get('/banned', function () {
 })->middleware(['verified']);
 
 
-Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard')->middleware(['verified']);;
-Route::get('/account/settings', [App\Http\Controllers\AccountController::class, 'index'])->name('accsettings');
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard')->middleware(['verified']);
+Route::get('/account/settings', [App\Http\Controllers\AccountController::class, 'index'], ['view' => 'general']);
+
+Route::get('/verifydiscord', [App\Http\Controllers\DiscordVerificationController::class, 'index']);
+Route::get('/discorddata', [App\Http\Controllers\DiscordVerificationController::class, 'getdata']);
 
 Fortify::verifyEmailView(function () {
     return view('auth.verify-email');

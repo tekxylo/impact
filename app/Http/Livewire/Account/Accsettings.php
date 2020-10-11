@@ -7,6 +7,7 @@ use Livewire\Component;
 class Accsettings extends Component
 {
     public $active = 'general';
+    public $view;
 
     public function render()
     {

@@ -13,10 +13,13 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "impact/oauth2-discord": "dev-master",
         "laravel/fortify": "^1.6",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "livewire/livewire": "^2.2"
+        "league/oauth2-client": "^2.5",
+        "livewire/livewire": "^2.2",
+        "wohali/oauth2-discord-new": "^1.1"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
