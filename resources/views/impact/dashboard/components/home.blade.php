@@ -60,6 +60,41 @@
             <br>
             <div class="card">
                <div class="card-body">
+                  <h2 style="margin-top:5px;" class="text-primary"><i class="fad fa-eye"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>Impact Update V6.1 Sneak Peak!</strong></p>
+                  <p class="text-primary" style="font-size:14px;"><strong>This update is not yet released.</strong></p>
+                  <hr>
+                  <h5>Change Notes</h5>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-fingerprint text-primary"></i> Added Two Factor Authentication</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-envelope text-primary"></i> Added Email Verification</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-shopping-cart text-primary"></i> Added New Marketplace</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-info-circle text-primary"></i> Added New Wiki</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fab fa-google text-primary"></i> Added Google Authentication</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fab fa-discord text-primary"></i> Added Discord Authentication</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fab fa-facebook text-primary"></i> Added Facebook Authentication</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-egg text-primary"></i> New Easter Eggs</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-bug text-primary"></i> Fixed Issue While Creating New Rides</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-bug text-primary"></i> Fixed Issue While Creating New Vehicles</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-bug text-primary"></i> Fixed Account Settings</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-bug text-primary"></i> Fixed UI Glitches</strong></p>
+               </div>
+            </div>
+            <br>
+            <div class="card">
+               <div class="card-body">
+                  <h2 style="margin-top:5px;" class="text-primary"><i class="fad fa-plane-departure"></i></h2>
+                  <p style="padding:0px;margin:0px;"><strong>Take Flight! Impact is now flying.</strong></p>
+                  <hr>
+                  <img src="https://www.logolynx.com/images/logolynx/30/30d3570fd23288630aad0a154c9779fa.png" alt="userprofile" class="img-responsive" style="width:200px;">
+                  <!--<!h5>Change Notes</h5>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-moon text-primary"></i> New Dark Theme</strong></p>
+                  <p style="padding:0px;margin:0px;"><strong><i class="fad fa-bug text-primary"></i> Fixed Multiple Bugs</strong></p>-->
+                  <a href="https://www.flyracing.com/?referral=impactatv" class="btn btn-outline-primary float-right">Buy your gear today</a>
+               </div>
+            </div>
+            <br>
+            <div class="card">
+               <div class="card-body">
                   <h2 style="margin-top:5px;" class="text-primary"><i class="fad fa-cloud-upload"></i></h2>
                   <p style="padding:0px;margin:0px;"><strong>Impact Update V5.48.2 Released!</strong></p>
                   <hr>
@@ -92,6 +127,7 @@
                   <p style="padding:0px;margin:0px;"><strong>Impact is now sponsored by G-Portal!</strong></p>
                   <hr>
                   <img src="/gportal.png" alt="userprofile" class="img-responsive" style="width:80px;">
+                  <a href="https://www.g-portal.com?ref=TekXylo" class="btn btn-outline-primary float-right">Buy your servers today</a>
                </div>
             </div>
             

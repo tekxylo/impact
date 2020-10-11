@@ -1,4 +1,4 @@
 @extends('layouts.app')
 @section('content')
-<livewire:accsettings.accsettings/>
+<livewire:account.accsettings/>
 @endsection

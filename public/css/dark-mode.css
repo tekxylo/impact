@@ -174,3 +174,7 @@ background: #0d6efd!important;
 .form-check-input {
     background-color:#2a3340;
 }
+
+.list-group-item.disabled, .list-group-item:disabled {
+    background-color: #191d26;
+}
