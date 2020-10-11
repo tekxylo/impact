@@ -49,7 +49,7 @@
 
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Favorite Vehicle</label>
-               <input disabled type="text" class="form-control" value="Malakoff Rd (Teal Trail)" style="background-color:#2a3340 !important;">
+               <input disabled type="text" class="form-control" style="background-color:#2a3340 !important;">
             </div>
                <button type="submit" class="btn btn-primary float-right">Save Changes</button><br>
                </form>
