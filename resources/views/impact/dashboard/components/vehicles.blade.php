@@ -19,19 +19,19 @@
          <div class="card">
             <div class="card-body">
             @if($vehicle->type == 'quad')
-            <h2 style="margin-top:5px;" class="text-primary"><i class="fas fa-truck-monster"></i> <strong style="color: #000;font-size:18px;">Quad - {{$vehicle->vehicle_name}}</strong></h2>
+            <h2 style="margin-top:5px;" class="text-primary"><i class="far fa-truck-monster"></i> <strong style="color: #fff;font-size:18px;">Quad - {{$vehicle->vehicle_name}}</strong></h2>
             @endif
 
             @if($vehicle->type == '4wheeler')
-            <h2 style="margin-top:5px;" class="text-primary"><i class="fas fa-truck-monster"></i> <strong style="color: #000;font-size:18px;">4 Wheeler - {{$vehicle->vehicle_name}}</strong></h2>
+            <h2 style="margin-top:5px;" class="text-primary"><i class="far fa-truck-monster"></i> <strong style="color: #fff;font-size:18px;">4 Wheeler - {{$vehicle->vehicle_name}}</strong></h2>
             @endif
 
             @if($vehicle->type == 'side by side')
-            <h2 style="margin-top:5px;" class="text-primary"><i class="fas fa-truck-monster"></i> <strong style="color: #000;font-size:18px;">Side By Side - {{$vehicle->vehicle_name}}</strong></h2>
+            <h2 style="margin-top:5px;" class="text-primary"><i class="far fa-truck-monster"></i> <strong style="color: #fff;font-size:18px;">Side By Side - {{$vehicle->vehicle_name}}</strong></h2>
             @endif
 
             @if($vehicle->type == 'dirtbike')
-            <h2 style="margin-top:5px;" class="text-primary"><i class="fas fa-motorcycle"></i> <strong style="color: #000;font-size:18px;">Dirt Bike - {{$vehicle->vehicle_name}}</strong></h2>
+            <h2 style="margin-top:5px;" class="text-primary"><i class="far fa-motorcycle"></i> <strong style="color: #fff;font-size:18px;">Dirt Bike - {{$vehicle->vehicle_name}}</strong></h2>
             @endif
 
 

@@ -44,19 +44,12 @@
 
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Favorite Trail</label>
-               <input type="text" class="form-control" wire:model="fav_trail" value="Malakoff Rd (Teal Trail)" style="background-color:#2a3340 !important;">
+               <input disabled type="text" class="form-control" wire:model="fav_trail" value="Malakoff Rd (Teal Trail)" style="background-color:#2a3340 !important;">
             </div>
 
             <div class="mb-3">
-               <label for="exampleInputEmail1" class="form-label">Favorite Vehicle Type</label>
-               <select id="disabledSelect" class="form-select" style="background-color:#2a3340 !important;">
-               <option>Dirtbike</option>
-                     <option>ATV</option>
-                     <option>4 Wheeler</option>
-                     <option>Truck</option>
-                     <option>Rock Crawler</option>
-                     <option>Side By Side</option>
-               </select>
+               <label for="exampleInputEmail1" class="form-label">Favorite Vehicle</label>
+               <input disabled type="text" class="form-control" value="Malakoff Rd (Teal Trail)" style="background-color:#2a3340 !important;">
             </div>
                <button type="submit" class="btn btn-primary float-right">Save Changes</button><br>
                </form>
