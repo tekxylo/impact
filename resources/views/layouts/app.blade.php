@@ -43,16 +43,16 @@
                   <!-- Left Side Of Navbar -->
                   <ul class="navbar-nav mr-auto">
                   <li class="nav-item px-2">
-                        <a class="nav-link" href="/dashboard" style="color:#fff;"><i class="far fa-home"></i> {{ __('Dashboard') }}</a>
+                        <a class="nav-link" href="/dashboard" style="color:#fff;"><i class="far fa-home" style="margin-right:5px;"></i> {{ __('Dashboard') }}</a>
                      </li>
                      <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-calendar-alt" style=""></i> {{ __('Events') }}</a>
+                        <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-calendar-alt" style="margin-right:5px;"></i> {{ __('Events') }}</a>
                      </li>
                      <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-motorcycle" style=""></i> {{ __('Teams') }}</a>
+                        <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-motorcycle" style="margin-right:5px;"></i> {{ __('Teams') }}</a>
                      </li>
                      <li class="nav-item px-2">
-                        <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-globe-americas" style=""></i> {{ __('Impact Network') }}</a>
+                        <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-globe-americas" style="margin-right:5px;"></i> {{ __('Impact Network') }}</a>
                      </li>
                   </ul>
                   <!-- Right Side Of Navbar -->
@@ -60,11 +60,11 @@
                      <!-- Authentication Links -->
                      @guest
                      <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}" style="color:#fff;"> <i class="far fa-sign-in-alt"></i> {{ __('Login') }}</a>
+                        <a class="nav-link" href="{{ route('login') }}" style="color:#fff;"> <i class="far fa-sign-in-alt" style="margin-right:5px;"></i> {{ __('Login') }}</a>
                      </li>
                      @if (Route::has('register'))
                      <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}" style="color:#fff;"> <i class="far fa-edit"></i>{{ __('Register') }}</a>
+                        <a class="nav-link" href="{{ route('register') }}" style="color:#fff;"> <i class="far fa-pencil" style="margin-right:5px;"></i>{{ __('Register') }}</a>
                      </li>
                      @endif
                      @else

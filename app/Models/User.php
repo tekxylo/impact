@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Alsofronie\Uuid\UuidModelTrait;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use UuidModelTrait, HasFactory, Notifiable, SoftDeletes;
 

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Laravel\Fortify\Fortify;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +24,12 @@ Route::get('/account/newride', function () {
 
 Route::get('/banned', function () {
     return view('errors/banned');
-});
+})->middleware(['verified']);
 
 
-Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard')->middleware(['verified']);;
 Route::get('/account/settings', [App\Http\Controllers\AccountController::class, 'index'])->name('accsettings');
 
+Fortify::verifyEmailView(function () {
+    return view('auth.verify-email');
+});

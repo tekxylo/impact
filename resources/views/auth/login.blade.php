@@ -14,8 +14,9 @@
         <div class="col-md-10">
                         <center>
                         <br>
-                        <img class="mb-3" src="impact-w.png" alt="" width="272">
-                        <br><br>
+                        <i class="fad fa-sign-in-alt text-primary" style="font-size:40px;margin-bottom:15px;"></i>
+                        <h5>Login</h5>
+                        <br>
                         </center>
                                 <input id="email" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
@@ -35,27 +36,31 @@
                                     </span>
                                 @enderror
 
-                        <!--<div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>-->
+                        <br>
+                        <div class="form-check">
+  <input name="remember" id="remember" class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="" {{ old('remember') ? 'checked' : '' }}>
+  <label class="form-check-label" for="flexCheckDefault">
+  {{ __('Remember Me') }}
+  </label>
+</div>
 <br>
                                 <button type="submit" class="btn btn-primary" style="width:100%;margin-bottom:10px;">
                                     {{ __('Login') }}
                                 </button>
 
+                                <center>
+                                <i class="fab fa-google" style="font-size:25px;padding:15px;color:#4285F4;"></i>
+                                <i class="fab fa-discord" style="font-size:25px;padding:15px;color:#7289DA;"></i>
+                                <i class="fab fa-facebook" style="font-size:25px;padding:15px;color:#3b78f2;"></i>
+                                </center>
+                                <br>
+
                                 @if (Route::has('password.request'))
-                                    <!--<a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a href="{{ route('password.request') }}" style="text-decoration:none;">
                                         {{ __('Forgot Your Password?') }}
-                                    </a>-->
+                                    </a>
                                 @endif
+                                <br><br>
                                 </div></div>
                     </form>
                 </div>
