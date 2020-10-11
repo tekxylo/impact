@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Fortify\Fortify;
 use App\Models\User;
+use Livewire\Livewire;
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -52,6 +53,12 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
+        Fortify::twoFactorChallengeView('auth.two-factor-challenge');
+        /*Fortify::TwoFactorAuthenticationForm()*/
+
+        /*Fortify::TwoFactorAuthenticationForm(function() {
+            return view('auth.fergot-password');
+        });*/
 
         Fortify::requestPasswordResetLinkView(function() {
             return view('auth.fergot-password');

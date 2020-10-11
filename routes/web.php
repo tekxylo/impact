@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Fortify;
+use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,8 @@ Route::get('/account/settings', [App\Http\Controllers\AccountController::class, 
 Fortify::verifyEmailView(function () {
     return view('auth.verify-email');
 });
+
+Route::get('/enable2fa', [App\Http\Controllers\TwoFactorAuthenticationController::class, 'store']);
+Route::get('/disable2fa', [App\Http\Controllers\TwoFactorAuthenticationController::class, 'destroy']);
+Route::get('/recoverycodes', [App\Http\Controllers\TwoFactorAuthenticationController::class, 'recoverycodes']);
+Route::get('/qrcode', [App\Http\Controllers\TwoFactorAuthenticationController::class, 'qrcode']);

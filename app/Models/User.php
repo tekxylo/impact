@@ -8,13 +8,14 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Alsofronie\Uuid\UuidModelTrait;
+use Laravel\Fortify\TwoFactorAuthenticatable;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use UuidModelTrait, HasFactory, Notifiable, SoftDeletes;
+    use TwoFactorAuthenticatable, UuidModelTrait, HasFactory, Notifiable, SoftDeletes;
 
     protected $fillable = ['name','email','password','tag'];
-    protected $hidden = ['password','remember_token',];
+    protected $hidden = ['password','remember_token','two_factor_recovery_codes','two_factor_secret'];
     protected $dates = ['deleted_at', 'updated_at', 'created_at'];
     protected $casts = ['email_verified_at' => 'datetime'];
 }
