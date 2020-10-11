@@ -8,7 +8,7 @@
          </div>
          <br>
          <div class="row ">
-        <div class="col-sm-3">
+        <!--<div class="col-sm-3">
             <div class="card" style="height:114px;">
                <div class="card-body">
                <center>
@@ -18,8 +18,8 @@
                </div>
             </div>
 
-        </div>
-        <div class="col-sm-9">
+        </div>-->
+        <div class="col-sm-12">
             <div class="card">
                <div class="card-body">
                <h4 style="font-size:18px;"><i class="fal fa-long-arrow-alt-up text-primary" style="font-size:25px;"></i> Level 3</h4>
