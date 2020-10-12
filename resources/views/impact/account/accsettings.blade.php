@@ -1,3 +1,4 @@
+<div class="container py-4">
 <div class="container">
    <div class="row justify-content-center">
       <div class="col-md-3">
@@ -27,29 +28,44 @@
             @endif
             <div class="list-group">
             <button class="list-group-item list-group-item-action" disabled><i class="far fa-book"></i> Policies</button>
-            <button disabled href="#" class="list-group-item list-group-item-action"><i class="far fa-info-circle"></i> About Impact</button>
+            <button wire:click="setPage('about')" href="#" class="list-group-item list-group-item-action @if($active == 'about') active @endif"><i class="far fa-info-circle"></i> About Impact</button>
             </div>
       </div>
       <div class="col-md-8">
-            @if($active == 'general') 
+            @if($active == 'general')
             <livewire:account.general/>
             @endif
 
-            @if($active == 'profilepicture') 
+            @if($active == 'profilepicture')
             Profile Picture
             @endif
 
-            @if($active == 'security') 
+            @if($active == 'security')
             <livewire:account.security/>
             @endif
 
-            @if($active == 'connections') 
+            @if($active == 'connections')
             <livewire:account.connections/>
             @endif
 
-            @if($active == 'about') 
-            About
+            @if($active == 'about')
+            <div class="card">
+                <div class="card-body">
+                   <center>
+                    <img src="/impact-w.png" alt="Italian Trulli"><br>
+                    <hr>
+                      <p style="padding:0px;margin:0px;"><strong>Version : 6.1 Release</strong></p>
+                      <p>Created by : Dirtbikes (Tek Xylo)</p>
+                      <br>
+                      <p>We would like to extend our thanks to the following sponsors for funding Impact development. G-Portal, Google Cloud & Fly Racing</p>
+                      <br>
+                      <a href="https://github.com/Impact-Offroading-LTD/impact" class="btn btn-primary float-center"><i class="fab fa-github"></i> Github Page</a>
+                    </center>
+                </div>
+             </div>
+             <br>
             @endif
       </div>
    </div>
+</div>
 </div>

@@ -1,13 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.nl-app')
 
 @section('content')
+<div class="container py-4">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
 
                 <div class="card-body">
-                
+
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="row justify-content-center">
@@ -67,5 +68,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

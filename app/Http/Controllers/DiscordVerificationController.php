@@ -31,7 +31,7 @@ class DiscordVerificationController extends Controller
             'clientSecret'      => 'Fttms6FtW9ENgbJTHuyEko2aoLPVoqXN',
             'redirectUri'       => env("APP_URL") . '/discorddata'
         ]);
-        
+
         $token = $provider->getAccessToken('authorization_code', [
             'code' => $request->input('code')
         ]);
@@ -65,7 +65,7 @@ class DiscordVerificationController extends Controller
     public function index()
     {
         session_start();
-        
+
         echo '<a href="https://discord.com/api/oauth2/authorize?client_id=764847614825988116&redirect_uri=http%3A%2F%2Flocalhost%2Fdiscorddata&response_type=code&scope=identify%20email">Link to Discord</a>';
 
     }

@@ -3,11 +3,15 @@
 namespace App\Http\Livewire\Account;
 
 use Livewire\Component;
+use Auth;
 
 class Accsettings extends Component
 {
-    public $active = 'general';
-    public $view;
+    public $active;
+
+    public function mount() {
+        $this->active = 'general';
+    }
 
     public function render()
     {

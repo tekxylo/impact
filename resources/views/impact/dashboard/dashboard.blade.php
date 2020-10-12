@@ -1,3 +1,4 @@
+<div class="container py-4">
 <div class="container">
    <div class="row justify-content-center">
       <div class="col-md-3">
@@ -10,15 +11,20 @@
             <li class="list-group-item"><a href="/account/events" style="color: black;text-decoration: none;"><i class="fas fa-calendar-alt" style="color: #e8253b;"></i> {{ __('Your Events') }}</a></li>
             <li class="list-group-item"><a href="/account/vehicles" style="color: black;text-decoration: none;"><i class="fas fa-motorcycle" style="color: #e8253b;"></i> {{ __('Your Vehicles') }}</a></li>
             <li class="list-group-item"><a href="/account/vehicles" style="color: black;text-decoration: none;"><i class="fas fa-cog" style="color: #e8253b;"></i> {{ __(' Account Settings') }} <span class="badge badge-secondary">New</span></a></li>
-            
+
             </ul><br>-->
          <div class="card">
             <div class="card-body">
                   <center>
                   <img src="https://media.discordapp.net/attachments/756086069275131945/764507706127548466/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:75px;height:75px;">
                      <br><br><h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;">{{Auth::user()->name}}</h4>
+                     @if(Auth::user()->role == 'admin')
                      <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray"><strong>Administrator</strong></p>
-                     </center>
+                     @else
+                     <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray"><strong>Member</strong></p>
+
+                     @endif
+                    </center>
                <!--<hr>
                <h4 style="font-size:18px;"><i class="fas fa-level-up-alt"></i> Level</h4>
                <p style="margin-bottom:5px;padding-bottom:0px;"><strong>1 | 3000/10000 OXP</strong></p>
@@ -50,7 +56,8 @@
             <button wire:click="setPage('events')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'events') active @endif"><i class="far fa-calendar-alt"></i> Events</button>
             <button wire:click="setPage('history')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'history') active @endif"><i class="far fa-motorcycle"></i>  Rides</button>
             <button wire:click="setPage('vehicles')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'vehicles') active @endif"><i class="far fa-truck-monster"></i>  Vehicles</button>
-            <button wire:click="setPage('chat')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'chat') active @endif"><i class="far fa-comments"></i> Chats</button>
+            <button wire:click="setPage('marketplace')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'marketplace') active @endif"><i class="far fa-shopping-cart"></i> Marketplace</button>
+            <button wire:click="setPage('wiki')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'wiki') active @endif"><i class="far fa-info-circle"></i> Wiki</button>
             <button wire:click="setPage('network')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'network') active @endif"><i class="far fa-globe-americas"></i> Impact Network</button>
             <button wire:click="setPage('teams')" style="outline:none;" class="list-group-item list-group-item-action @if($active == 'teams') active @endif"><i class="far fa-flag-checkered"></i> Your Teams</button>
             <a href="/account/settings" class="list-group-item list-group-item-action"><i class="far fa-cog"></i> Account Settings</a>
@@ -88,7 +95,8 @@
          @if($active == 'teams')
          <livewire:errors.error5002/>
          @endif
-      
+
       </div>
    </div>
+</div>
 </div>

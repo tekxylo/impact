@@ -1,13 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.nl-app')
 
 @section('content')
+<div class="container py-4">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
 
                 <div class="card-body">
-                
+
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
                         <div class="row justify-content-center">
@@ -23,7 +24,7 @@
                            <i class="fad fa-check-circle"></i> {{ session('status') }}
                            </p>
                         @endif
-                               
+
 
                                 <input type="hidden" name="token" value="{{ $request->route('token') }}">
                                 <input id="email" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{$request->email}}" required autofocus>
@@ -75,5 +76,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

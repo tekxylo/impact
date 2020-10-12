@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Account\Accsettings;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Fortify;
 use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
@@ -15,21 +16,11 @@ use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/account/newride', function () {
-    return view('impact/account/newride');
-});
-
-Route::get('/banned', function () {
-    return view('errors/banned');
-})->middleware(['verified']);
+Route::get('/', App\Http\Livewire\Frontpage::class);
+Route::get('/dashboard', App\Http\Livewire\Dashboard\Dashboard::class)->middleware('auth');
+Route::get('/account/settings', App\Http\Livewire\Account\Accsettings::class)->middleware('auth');
 
 
-Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard')->middleware(['verified']);
-Route::get('/account/settings', [App\Http\Controllers\AccountController::class, 'index'], ['view' => 'general']);
 
 Route::get('/verifydiscord', [App\Http\Controllers\DiscordVerificationController::class, 'index']);
 Route::get('/discorddata', [App\Http\Controllers\DiscordVerificationController::class, 'getdata']);
@@ -37,8 +28,3 @@ Route::get('/discorddata', [App\Http\Controllers\DiscordVerificationController::
 Fortify::verifyEmailView(function () {
     return view('auth.verify-email');
 });
-
-Route::get('/enable2fa', [App\Http\Controllers\TwoFactorAuthenticationController::class, 'store']);
-Route::get('/disable2fa', [App\Http\Controllers\TwoFactorAuthenticationController::class, 'destroy']);
-Route::get('/recoverycodes', [App\Http\Controllers\TwoFactorAuthenticationController::class, 'recoverycodes']);
-Route::get('/qrcode', [App\Http\Controllers\TwoFactorAuthenticationController::class, 'qrcode']);
