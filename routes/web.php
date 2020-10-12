@@ -16,6 +16,10 @@ use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
 |
 */
 
+
+/* AUTHENTICATION */
+Route::get('/login', App\Http\Livewire\Login::class)->name('login');
+
 Route::get('/', App\Http\Livewire\Frontpage::class);
 Route::get('/dashboard', App\Http\Livewire\Dashboard\Dashboard::class)->middleware('auth');
 Route::get('/account/settings', App\Http\Livewire\Account\Accsettings::class)->middleware('auth');

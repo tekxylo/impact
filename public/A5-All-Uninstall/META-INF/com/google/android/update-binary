@@ -1,0 +1,70 @@
+#!/sbin/sh
+OUTFD=$2
+ZIP=$3
+
+ui_print() {
+  echo -n -e "ui_print $1\n" > /proc/self/fd/$OUTFD
+  echo -n -e "ui_print\n" > /proc/self/fd/$OUTFD
+}
+
+
+cd /tmp
+rm -rf moluntic
+mkdir moluntic
+cd moluntic
+
+unzip -o "$ZIP"
+ui_print "WARNING! This Installation May Brick Your Device! Be Careful!"
+ui_print "Make Sure You Have The Following : "
+ui_print "- Backup Of Data, EFS & Bootloader"
+ui_print "- Common Sense"
+ui_print "+-------------------------------------+"
+ui_print "|           A5 Splash Screen          |"
+ui_print "|                                     |"
+ui_print "|             by Tek Xylo             |"
+ui_print "+-------------------------------------+"
+ui_print "Script Inspired By : @Aquib132"
+ui_print "Verifying Varient..."
+ui_print "+-------------------------------------+"
+ui_print "| Device : a5y17lte                   |"
+ui_print "| Color : All                         |"
+ui_print "+-------------------------------------+"
+
+ui_print "Mounting Data..."
+mount /data
+
+if [ ! -e /data/media/0/PARAM.bak ]; then
+	ui_print "Backing Up PARAM to /sdcard/PARAM.bak..."
+	cat /dev/block/platform/13540000.dwmmc0/by-name/PARAM > /data/media/0/PARAM.bak
+	chown 1023:1023 /data/media/0/PARAM.bak
+	chmod 664 /data/media/0/PARAM.bak
+fi
+
+ui_print "Installing New Splash Screen..."
+chmod 755 tar
+mkdir tartemp
+cd tartemp
+/tmp/moluntic/tar -xf /dev/block/platform/13540000.dwmmc0/by-name/PARAM
+ui_print "Coping Boot Splash for Black Varient..."
+cp /tmp/moluntic/logo.jpg .
+cp /tmp/moluntic/logow.jpg .
+chown root:root *
+chmod 444 logo.jpg
+chmod 444 logow.jpg
+ui_print "Coping Boot Splash for Blue Varient..."
+ui_print "Coping Boot Splash for Gold Varient..."
+ui_print "Coping Boot Splash for Pink Varient..."
+touch *
+ui_print "Creating Backup..."
+/tmp/moluntic/tar -pcvf ../new.tar *
+cd ..
+cat new.tar > /dev/block/platform/13540000.dwmmc0//by-name/PARAM
+
+ui_print "Unmounting Data..."
+umount /data > /dev/null 2>&1
+
+ui_print " "
+ui_print "Installation Finished, Please Reboot To System!"
+cd /
+rm -rf /tmp/moluntic
+sync
