@@ -20,11 +20,7 @@ use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
 /* AUTHENTICATION */
 
 Route::get('/login', App\Http\Livewire\Login::class)->name('login');
-
-Route::get('/', App\Http\Livewire\Frontpage::class);
-Route::get('/dashboard', App\Http\Livewire\Dashboard\Dashboard::class)->middleware('auth')->middleware('verified');
-Route::get('/account/settings', App\Http\Livewire\Account\Accsettings::class)->middleware('auth');
-
+Route::get('/register', App\Http\Livewire\Register::class)->name('register');
 
 Route::get('/test', [App\Http\Controllers\LoginAuthenticationController::class, 'authenticate']);
 Route::get('/verifydiscord', [App\Http\Controllers\DiscordVerificationController::class, 'index']);
@@ -33,3 +29,10 @@ Route::get('/discorddata', [App\Http\Controllers\DiscordVerificationController::
 Fortify::verifyEmailView(function () {
     return view('auth.verify-email');
 });
+
+
+/* IMPACT */
+
+Route::get('/', App\Http\Livewire\Frontpage::class);
+Route::get('/dashboard', App\Http\Livewire\Dashboard\Dashboard::class)->middleware('auth')->middleware('verified');
+Route::get('/account/settings', App\Http\Livewire\Account\Accsettings::class)->middleware('auth');
