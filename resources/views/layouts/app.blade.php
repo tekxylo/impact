@@ -47,7 +47,7 @@
                  <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
 
-                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:30px;height:30px;"></div>
+                       <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/00000000000000000000000000000000?s=100');width:30px;height:30px;"></div>
 
                     </a>
                     </a>
@@ -72,12 +72,7 @@
                  </style>
                  <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        @if(Auth::user()->avatar_url)
-                        <div class="user-avatar" style="background-image: url('{{Auth::user()->avatar_url}}');width:30px;height:30px;"></div>
-                        <!--<img src="{{Auth::user()->avatar_url}}" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">-->
-                       @else
-                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:30px;height:30px;"></div>
-                       @endif
+                       <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:30px;height:30px;"></div>
                        <!--<div>
                        <!--
                        <h4 style="font-size:16px;margin-top:7px;display:inline;color:#fff !important;">{{Auth::user()->name}}</h4>
@@ -86,12 +81,8 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="min-width: 257px;">
                        <center>
                           <!-- https://ui-avatars.com/api/?name=Tek Xylo&color=0d6efd&background=2d2d2d -->
-                          @if(Auth::user()->avatar_url)
-                        <div class="user-avatar" style="background-image: url('{{Auth::user()->avatar_url}}');width:50px;height:50px;"></div>
-                        <!--<img src="{{Auth::user()->avatar_url}}" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">-->
-                       @else
-                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:50px;height:50px;"></div>
-                       @endif
+                          <img src="https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100" alt="userprofile" class="img-responsive rounded-circle" style="width:50px;height:50px;">
+
 
                           <h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;font-size:18px;margin-top:7px;">{{Auth::user()->name}}</h4>
                           <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray;font-size:14px;"><strong>{{'@' . Auth::user()->tag}}</strong></p>

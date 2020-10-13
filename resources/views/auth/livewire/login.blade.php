@@ -24,11 +24,7 @@
             <center>
              <br>
 
-             @if($avatar_url)
-             <div class="user-avatar" style="background-image: url('{{$avatar_url}}');width:75px;height:75px;"></div>
-             @else
-             <div class="user-avatar" style="background-image: url(/default_pfp.png)"></div>
-             @endif
+             <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( $email ) ) )}}&s=100');width:75px;height:75px;"></div>
 
              <br><h5>Welcome, {{$username}}!</h5>
              <p>{{$email}}</p>

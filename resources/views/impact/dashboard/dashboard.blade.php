@@ -16,12 +16,8 @@
          <div class="card">
             <div class="card-body">
                   <center>
-                                           @if(Auth::user()->avatar_url)
-                        <div class="user-avatar" style="background-image: url('{{Auth::user()->avatar_url}}');width:75px;height:75px;"></div>
-                        <!--<img src="{{Auth::user()->avatar_url}}" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">-->
-                       @else
-                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:75px;height:75px;"></div>
-                       @endif<h4 class="text-primary" style="margin-top:15px;margin-bottom:0px;padding-bottom:0px;">{{Auth::user()->name}}</h4>
+                       <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:75px;height:75px;"></div>
+                       <h4 class="text-primary" style="margin-top:15px;margin-bottom:0px;padding-bottom:0px;">{{Auth::user()->name}}</h4>
                      @if(Auth::user()->role == 'admin')
                      <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray"><strong>Administrator</strong></p>
                      @else

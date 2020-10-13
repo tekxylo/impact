@@ -3,12 +3,15 @@
 namespace App\Http\Livewire\Account;
 
 use Livewire\Component;
+use App\Models\DiscordConnection;
 use Auth;
+use League\OAuth2\Client\Provider\Discord;
 
 class Profilepicture extends Component
 {
     public $avatar;
     public $status;
+    public $discord_connection;
 
     public function updateprofileinformation()
     {
@@ -21,6 +24,7 @@ class Profilepicture extends Component
 
     public function mount()
     {
+        $this->discord_connection = DiscordConnection::where('oaccount', Auth::user()->id)->first();
         $this->name = Auth::user()->name;
         $this->avatar = Auth::user()->avatar_url;
     }

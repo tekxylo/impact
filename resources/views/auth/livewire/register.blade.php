@@ -56,10 +56,10 @@
                                </a>-->
                             @endif
 
-                            <center><br>
-                                <p>Or sign in with Google</p>
-                             <img class="mb-3" src="https://media.discordapp.net/attachments/760701188030857223/765223635572621372/googlelogo_color_272x92dp.png" alt="" width="72">
-                            </center>
+                                                       <center><br>
+                               <p>Or sign in with Google</p>
+                            <img class="mb-3" src="https://media.discordapp.net/attachments/760701188030857223/765223635572621372/googlelogo_color_272x92dp.png" alt="" width="72">
+                           </center>
                          </div>
                       </div>
                       <br>

@@ -62,14 +62,16 @@
                  </style>
                  <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                       <img src="https://media.discordapp.net/attachments/756086069275131945/764507706127548466/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">
-                       <!--{{ Auth::user()->name }}-->
-                       <h4 style="font-size:16px;margin-top:7px;display:inline;color:#fff !important;">{{Auth::user()->name}}</h4>
-                    </a>
+                        <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:30px;height:30px;"></div>
+                        <!--<div>
+                        <!--
+                        <h4 style="font-size:16px;margin-top:7px;display:inline;color:#fff !important;">{{Auth::user()->name}}</h4>
+                        </div>-->
+                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="min-width: 257px;">
                        <center>
                           <!-- https://ui-avatars.com/api/?name=Tek Xylo&color=0d6efd&background=2d2d2d -->
-                          <img src="https://media.discordapp.net/attachments/756086069275131945/764507706127548466/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:50px;height:50px;">
+                          <img src="https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100" alt="userprofile" class="img-responsive rounded-circle" style="width:50px;height:50px;">
                           <br>
                           <h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;font-size:18px;margin-top:7px;">{{Auth::user()->name}}</h4>
                           <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray;font-size:14px;"><strong>{{'@' . Auth::user()->tag}}</strong></p>
