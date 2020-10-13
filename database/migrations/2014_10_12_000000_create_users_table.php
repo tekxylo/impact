@@ -22,6 +22,9 @@ class CreateUsersTable extends Migration
             $table->enum('role', ['admin', 'mod', 'premium', 'user'])->default('user');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('fav_trail')->nullable()->default(NULL);
+            $table->string('fav_vehicle')->nullable()->default(NULL);
+            $table->string('avatar_url')->nullable()->default('/default_pfp.png');
             $table->rememberToken();
             $table->softDeletes()->nullable()->default(NULL);
             $table->timestamps();

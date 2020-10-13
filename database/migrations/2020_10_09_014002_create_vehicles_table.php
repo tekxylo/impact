@@ -19,7 +19,9 @@ class CreateVehiclesTable extends Migration
             $table->uuid('oid');
             $table->string('vehicle_name');
             $table->string('model')->nullable()->default('Unknown');
-            $table->enum('type', ['quad', 'dirtbike', '4wheeler', 'truck' ,'rockcrawler', 'jeep', 'side by side', 'other'])->nullable()->default(NULL);
+            $table->string('type')->nullable()->default(NULL);
+            $table->string('distance')->nullable()->default(NULL);
+            $table->boolean('mainteance')->nullable()->default(false);
             $table->softDeletes()->nullable()->default(NULL);
             $table->timestamps();
         });

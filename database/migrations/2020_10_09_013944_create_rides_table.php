@@ -19,9 +19,10 @@ class CreateRidesTable extends Migration
             $table->uuid('oid');
             $table->string('name');
             $table->string('description')->nullable()->default(NULL);
-            $table->enum('ridetype', ['quad', 'dirtbike', '4wheeler', 'truck' ,'rockcrawler', 'jeep', 'other'])->nullable()->default(NULL);
+            $table->string('ridetype')->nullable()->default(NULL);
             $table->string('location');
-            $table->string('trail');
+            $table->string('distance');
+            $table->string('trail')->nullable()->default(NULL);
             $table->softDeletes()->nullable()->default(NULL);
             $table->timestamps();
         });

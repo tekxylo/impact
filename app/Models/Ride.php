@@ -13,6 +13,6 @@ class Ride extends Authenticatable
 {
     use UuidModelTrait, HasFactory, Notifiable, SoftDeletes;
 
-    protected $fillable = ['oid','name','description','ridetype','location','trail'];
+    protected $fillable = ['oid','name','description','ridetype','location','trail','distance'];
     protected $dates = ['deleted_at', 'updated_at', 'created_at'];
 }

@@ -84,15 +84,15 @@ width: 5px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-background: #191d26 !important; 
+background: #191d26 !important;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #0d6efd!important; 
+background: #0d6efd!important;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: #0d6efd!important; 
+background: #0d6efd!important;
 }
 
 .dropdown-menu {
@@ -166,7 +166,7 @@ background: #0d6efd!important;
 }
 
 .form-file-button {
-    background-color: #2a3340;    
+    background-color: #2a3340;
 }
 
 .page-link {
@@ -185,4 +185,30 @@ background: #0d6efd!important;
 
 .list-group-item.disabled, .list-group-item:disabled {
     background-color: #191d26;
+}
+
+.user-avatar{
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 60px;
+    -moz-background-clip: padding;
+    border-radius: 60px;
+    background-clip: padding-box;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.modal-content{
+    background: #191d26 !important;
+}
+
+.modal-header {
+    border:none;
+}
+
+.modal-footer {
+    border:none;
 }

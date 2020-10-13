@@ -44,12 +44,12 @@
 
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Favorite Trail</label>
-               <input disabled type="text" class="form-control" wire:model="fav_trail" value="Malakoff Rd (Teal Trail)" style="background-color:#2a3340 !important;">
+               <input type="text" class="form-control" wire:model="fav_trail" value="{{Auth::user()->fav_trail}}" style="background-color:#2a3340 !important;">
             </div>
 
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label">Favorite Vehicle</label>
-               <input disabled type="text" class="form-control" style="background-color:#2a3340 !important;">
+               <input type="text" class="form-control" wire:model="fav_vehicle" value="{{Auth::user()->fav_vehicle}}" style="background-color:#2a3340 !important;">
             </div>
                <button type="submit" class="btn btn-primary float-right">Save Changes</button><br>
                </form>

@@ -3,13 +3,15 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div style="height:400px;background-image:url('banner.png');background-size: cover;background-position: center;"></div>
         <div class="container">
           <div class="carousel-caption">
-            <img src="impact-w.png" alt="Italian Trulli"><br>
+            <center><img src="impact-w.png" alt="Italian Trulli" class="align-center text-center" style="width:250px;"><br></center>
             <p>Welcome to Impact! You're all in one offroading application to connect with other pepole around the world who likes offroading like you.</p>
             <p><a class="btn btn-lg btn-primary" href="/register" role="button">Sign up today</a></p>
           </div>
@@ -32,6 +34,30 @@
             <!--<h1>Local Content Creators</h1>
             <p>The Impact Community has their own content creators? Well yes! Go pay a visit to Ride Dirt Bikes our first ever partnered channel!</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit Channel</a></p>-->
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div style="height:400px;background-image:url('ark2.png');background-size: cover;background-position: center;"></div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>ARK: Survival Evolved</h1>
+            <p>You've asked for it, Introducing DarkElement Cluster! Our official gaming network from impact sponsored by nitrado & gportal!</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div style="height:400px;    background-image: url(/colb.jpg);
+        background-size: cover;
+        background-position: top;"></div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Our local rider : Colb!</h1>
+            <p>Yes! We have professionals in our community! From Canada & The Maritimes!</p>
+
           </div>
         </div>
       </div>
@@ -98,7 +124,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="text-primary" style="color: #e8253b;">Rides</h4>
-                <p style="margin-bottom:0px;padding-bottom:0px;"><strong> 0</strong></p>
+                <p style="margin-bottom:0px;padding-bottom:0px;"><strong> {{$total_rides}}</strong></p>
             </div>
 
           </div>
@@ -120,7 +146,7 @@
         <div class="card">
             <div class="card-body">
                <h4 class="text-primary" style="color: #e8253b;">Registered Vehicles</h4>
-               <p style="margin-bottom:0px;padding-bottom:0px;"><strong> 0</strong></p>
+               <p style="margin-bottom:0px;padding-bottom:0px;"><strong> {{$total_vehicles}}</strong></p>
 
             </div>
 

@@ -16,15 +16,22 @@
          <div class="card">
             <div class="card-body">
                   <center>
-                  <img src="https://media.discordapp.net/attachments/756086069275131945/764507706127548466/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:75px;height:75px;">
-                     <br><br><h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;">{{Auth::user()->name}}</h4>
+                                           @if(Auth::user()->avatar_url)
+                        <div class="user-avatar" style="background-image: url('{{Auth::user()->avatar_url}}');width:75px;height:75px;"></div>
+                        <!--<img src="{{Auth::user()->avatar_url}}" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">-->
+                       @else
+                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:75px;height:75px;"></div>
+                       @endif<h4 class="text-primary" style="margin-top:15px;margin-bottom:0px;padding-bottom:0px;">{{Auth::user()->name}}</h4>
                      @if(Auth::user()->role == 'admin')
                      <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray"><strong>Administrator</strong></p>
                      @else
                      <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray"><strong>Member</strong></p>
 
                      @endif
+                     <i class="fal fa-motorcycle" style="margin-right:5px;" data-toggle="tooltip" data-placement="top" title="Motocross Premium Membership">
+                     </i><i class="fal fa-truck-monster" data-toggle="tooltip" data-placement="top" title="Offroading Premium Membership"></i>
                     </center>
+
                <!--<hr>
                <h4 style="font-size:18px;"><i class="fas fa-level-up-alt"></i> Level</h4>
                <p style="margin-bottom:5px;padding-bottom:0px;"><strong>1 | 3000/10000 OXP</strong></p>

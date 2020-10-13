@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Laravel\Fortify\Fortify;
 use App\Models\User;
+use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
 class Login extends Component
 {
@@ -18,6 +19,7 @@ class Login extends Component
 
     public $username;
     public $test;
+    public $avatar_url;
 
 
     public function mount()
@@ -25,43 +27,26 @@ class Login extends Component
         $this->step = 1;
     }
 
+    public function getuser() {
+        $user = User::where('email', $this->email)->first();
+
+        if($user) {
+            $this->username = $user->name;
+            $this->avatar_url = $user->avatar_url;
+            $this->step = 2;
+        } else {
+            $this->step = 0;
+        }
+    }
+
+    public function resetform() {
+        $this->step = 1;
+    }
+
     public function render()
     {
         return view('auth.livewire.login');
-    }
-
-    public function getuser() {
-        $user = User::where('email', $this->email)->first();
-        $this->username = $user->name;
-
-        if($user) {
-            $this->step = 2;
-        } else {
-            $this->step = 1;
-        }
 
     }
 
-    public function authenticate(Request $request)
-    {
-        Log::info($request);
-        Log::info("Calling Fortify");
-
-        Log::info("================================================");
-        Log::info("Email : " . $this->email);
-        Log::info("Password : " . $this->password);
-
-        $user = User::where('email', $this->email)->first();
-
-        Fortify::authenticateUsing(function (Request $request) {
-            $user = User::where('email', $this->email)->first();
-
-            Log::info("Inside Fortify");
-
-            if ($user &&
-                Hash::check($request->password, $user->password)) {
-                return $user;
-            }
-        });
-    }
 }
