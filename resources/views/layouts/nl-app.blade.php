@@ -34,14 +34,24 @@
               <ul class="navbar-nav ml-auto">
                  <!-- Authentication Links -->
                  @guest
-                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}" style="color:#fff;"> <i class="far fa-sign-in-alt" style="margin-right:5px;"></i> {{ __('Login') }}</a>
+                 <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+
+                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:30px;height:30px;"></div>
+
+                    </a>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="min-width: 257px;">
+
+                       <a class="dropdown-item" href="/login"/>
+                       <i class="far fa-sign-in-alt" aria-hidden="true"></i> Login
+                       </a>
+                       <a class="dropdown-item" href="/register"/>
+                       <i class="far fa-edit" aria-hidden="true"></i> Register
+                       </a>
+
+                    </div>
                  </li>
-                 @if (Route::has('register'))
-                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}" style="color:#fff;"> <i class="far fa-pencil" style="margin-right:5px;"></i>{{ __('Register') }}</a>
-                 </li>
-                 @endif
                  @else
                  <style>
                     .dropdown-menu::before,

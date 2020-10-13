@@ -16,12 +16,17 @@ use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
 |
 */
 
+
+/* AUTHENTICATION */
+
+Route::get('/login', App\Http\Livewire\Login::class)->name('login');
+
 Route::get('/', App\Http\Livewire\Frontpage::class);
-Route::get('/dashboard', App\Http\Livewire\Dashboard\Dashboard::class)->middleware('auth');
+Route::get('/dashboard', App\Http\Livewire\Dashboard\Dashboard::class)->middleware('auth')->middleware('verified');
 Route::get('/account/settings', App\Http\Livewire\Account\Accsettings::class)->middleware('auth');
 
 
-
+Route::get('/test', [App\Http\Controllers\LoginAuthenticationController::class, 'authenticate']);
 Route::get('/verifydiscord', [App\Http\Controllers\DiscordVerificationController::class, 'index']);
 Route::get('/discorddata', [App\Http\Controllers\DiscordVerificationController::class, 'getdata']);
 

@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@extends('layouts.components.header')
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Impact</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+        <link rel="stylesheet" href="/fontawesome/css/all.css">
+        <link rel="stylesheet" href="/css/dark-mode.css">
+    </head>
+
 
 <body>
 
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light bg-impact shadow">
+    <nav class="navbar navbar-expand-md navbar-dark bg-impact shadow">
         <div class="container">
            <a class="navbar-brand" href="{{ url('/') }}">
            <img src="/impact-w.png" alt="Italian Trulli" style="width: 200px;"><br>
@@ -34,14 +44,24 @@
               <ul class="navbar-nav ml-auto">
                  <!-- Authentication Links -->
                  @guest
-                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}" style="color:#fff;"> <i class="far fa-sign-in-alt" style="margin-right:5px;"></i> {{ __('Login') }}</a>
+                 <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+
+                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:30px;height:30px;"></div>
+
+                    </a>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="min-width: 257px;">
+
+                       <a class="dropdown-item" href="/login"/>
+                       <i class="far fa-sign-in-alt" aria-hidden="true"></i> Login
+                       </a>
+                       <a class="dropdown-item" href="/register"/>
+                       <i class="far fa-edit" aria-hidden="true"></i> Register
+                       </a>
+
+                    </div>
                  </li>
-                 @if (Route::has('register'))
-                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}" style="color:#fff;"> <i class="far fa-pencil" style="margin-right:5px;"></i>{{ __('Register') }}</a>
-                 </li>
-                 @endif
                  @else
                  <style>
                     .dropdown-menu::before,
@@ -52,15 +72,27 @@
                  </style>
                  <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                       <img src="https://media.discordapp.net/attachments/756086069275131945/764507706127548466/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">
-                       <!--{{ Auth::user()->name }}-->
+                        @if(Auth::user()->avatar_url)
+                        <div class="user-avatar" style="background-image: url('{{Auth::user()->avatar_url}}');width:30px;height:30px;"></div>
+                        <!--<img src="{{Auth::user()->avatar_url}}" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">-->
+                       @else
+                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:30px;height:30px;"></div>
+                       @endif
+                       <!--<div>
+                       <!--
                        <h4 style="font-size:16px;margin-top:7px;display:inline;color:#fff !important;">{{Auth::user()->name}}</h4>
+                       </div>-->
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="min-width: 257px;">
                        <center>
                           <!-- https://ui-avatars.com/api/?name=Tek Xylo&color=0d6efd&background=2d2d2d -->
-                          <img src="https://media.discordapp.net/attachments/756086069275131945/764507706127548466/20200923_202220.png" alt="userprofile" class="img-responsive rounded-circle" style="width:50px;height:50px;">
-                          <br>
+                          @if(Auth::user()->avatar_url)
+                        <div class="user-avatar" style="background-image: url('{{Auth::user()->avatar_url}}');width:50px;height:50px;"></div>
+                        <!--<img src="{{Auth::user()->avatar_url}}" alt="userprofile" class="img-responsive rounded-circle" style="width:30px;height:30px;margin-top:-1px;">-->
+                       @else
+                       <div class="user-avatar" style="background-image: url('/default_pfp.png');width:50px;height:50px;"></div>
+                       @endif
+
                           <h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;font-size:18px;margin-top:7px;">{{Auth::user()->name}}</h4>
                           <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray;font-size:14px;"><strong>{{'@' . Auth::user()->tag}}</strong></p>
                        </center>

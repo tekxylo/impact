@@ -13,6 +13,6 @@ class Vehicle extends Authenticatable
 {
     use UuidModelTrait, HasFactory, Notifiable, SoftDeletes;
 
-    protected $fillable = ['oid','vehicle_name','model','type'];
+    protected $fillable = ['oid','vehicle_name','model','type','distance','mainteance'];
     protected $dates = ['deleted_at', 'updated_at', 'created_at'];
 }

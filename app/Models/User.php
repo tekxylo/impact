@@ -14,7 +14,7 @@ class User extends Authenticatable implements MustVerifyEmail
 {
     use TwoFactorAuthenticatable, UuidModelTrait, HasFactory, Notifiable, SoftDeletes;
 
-    protected $fillable = ['name','email','password','tag'];
+    protected $fillable = ['name','email','password','tag','fav_trail','fav_vehicle','avatar_url'];
     protected $hidden = ['password','remember_token','two_factor_recovery_codes','two_factor_secret'];
     protected $dates = ['deleted_at', 'updated_at', 'created_at'];
     protected $casts = ['email_verified_at' => 'datetime'];
