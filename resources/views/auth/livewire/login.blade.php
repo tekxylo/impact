@@ -27,8 +27,7 @@
              @if($avatar_url)
              <div class="user-avatar" style="background-image: url('{{$avatar_url}}');width:75px;height:75px;"></div>
              @else
-             <div class="user-avatar" style="background-image: url(/default_pfp.png)"></div>             <div class="user-avatar" style="background-image: url(/default_pfp.png)"></div>
-             <img src="/default_pfp.png" alt="userprofile" class="img-responsive rounded-circle" style="width:75px;height:75px;">
+             <div class="user-avatar" style="background-image: url(/default_pfp.png)"></div>
              @endif
 
              <br><h5>Welcome, {{$username}}!</h5>
