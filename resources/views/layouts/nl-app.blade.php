@@ -62,17 +62,27 @@
                  </style>
                  <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        @php
+                         $discord_connection = DiscordConnection::where('oaccount', Auth::user()->id)->first();
+                        @endphp
+                        @if(Auth::user()->avatar_url)
+                        <div class="user-avatar" style="background-image: url('https://cdn.discordapp.com/avatars/{{$discord_connection->discord_id}}/{{$discord_connection->avatar}}.jpg');width:30px;height:30px;"></div>
+                        @else
                         <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:30px;height:30px;"></div>
+                        @endif
                         <!--<div>
-                        <!--
-                        <h4 style="font-size:16px;margin-top:7px;display:inline;color:#fff !important;">{{Auth::user()->name}}</h4>
-                        </div>-->
-                     </a>
+                       <!--
+                       <h4 style="font-size:16px;margin-top:7px;display:inline;color:#fff !important;">{{Auth::user()->name}}</h4>
+                       </div>-->
+                    </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="min-width: 257px;">
                        <center>
                           <!-- https://ui-avatars.com/api/?name=Tek Xylo&color=0d6efd&background=2d2d2d -->
-                          <img src="https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100" alt="userprofile" class="img-responsive rounded-circle" style="width:50px;height:50px;">
-                          <br>
+                          @if(Auth::user()->avatar_url)
+                          <div class="user-avatar" style="background-image: url('https://cdn.discordapp.com/avatars/{{$discord_connection->discord_id}}/{{$discord_connection->avatar}}.jpg');width:50px;height:50px;"></div>
+                          @else
+                          <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:50px;height:50px;"></div>
+                          @endif<br>
                           <h4 class="text-primary" style="margin-bottom:0px;padding-bottom:0px;font-size:18px;margin-top:7px;">{{Auth::user()->name}}</h4>
                           <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray;font-size:14px;"><strong>{{'@' . Auth::user()->tag}}</strong></p>
                        </center>

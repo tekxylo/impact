@@ -16,8 +16,11 @@
          <div class="card">
             <div class="card-body">
                   <center>
-                       <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:75px;height:75px;"></div>
-                       <h4 class="text-primary" style="margin-top:15px;margin-bottom:0px;padding-bottom:0px;">{{Auth::user()->name}}</h4>
+                    @if(Auth::user()->avatar_url)
+                    <div class="user-avatar" style="background-image: url('https://cdn.discordapp.com/avatars/{{$discord_connection->discord_id}}/{{$discord_connection->avatar}}.jpg');width:75px;height:75px;"></div>
+                    @else
+                    <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:75px;height:75px;"></div>
+                    @endif <h4 class="text-primary" style="margin-top:15px;margin-bottom:0px;padding-bottom:0px;">{{Auth::user()->name}}</h4>
                      @if(Auth::user()->role == 'admin')
                      <p style="margin-bottom:0px;padding-bottom:0px;color:dark-gray"><strong>Administrator</strong></p>
                      @else

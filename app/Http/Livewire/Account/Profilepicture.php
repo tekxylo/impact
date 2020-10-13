@@ -13,13 +13,20 @@ class Profilepicture extends Component
     public $status;
     public $discord_connection;
 
-    public function updateprofileinformation()
+    public function add_discord()
     {
         $user = Auth::user();
-        $user->avatar_url = $this->avatar;
+        $user->avatar_url = 'discord';
+        $this->discord_connection = DiscordConnection::where('oaccount', Auth::user()->id)->first();
         $user->save();
+    }
 
-        $this->status = 'success';
+    public function remove_discord()
+    {
+        $user = Auth::user();
+        $user->avatar_url = null;
+        $this->discord_connection = DiscordConnection::where('oaccount', Auth::user()->id)->first();
+        $user->save();
     }
 
     public function mount()

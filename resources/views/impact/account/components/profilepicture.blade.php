@@ -13,17 +13,25 @@
 
                    <center>
                     <p class="text-secondary">Current Profile Picture</p>
+                    @if(Auth::user()->avatar_url)
+                    <div class="user-avatar" style="background-image: url('https://cdn.discordapp.com/avatars/{{$discord_connection->discord_id}}/{{$discord_connection->avatar}}.jpg');width:75px;height:75px;"></div>
+                    @else
                     <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:75px;height:75px;"></div>
-                        <br>
+                    @endif
+                    <br>
+
+                    @if(!Auth::user()->avatar_url)
                        <p>Avatar is provided by Gravatar.</p>
+                    @else
+                        <p>Avatar is provided by Discord.</p>
+                    @endif
                        <a href="https://en.gravatar.com/" class="btn btn-sm btn-primary">Set Gravatar</a>
-                       <button type="button" class="btn btn-sm btn-primary"
-                       @if(!$discord_connection)
 
-                       disabled
+                       @if(Auth::user()->avatar_url)
+                       <button wire:click="remove_discord" type="button" class="btn btn-sm btn-danger" @if(!$discord_connection) disabled @endif >Remove Discord Avatar</button>
+                       @else
+                       <button wire:click="add_discord" type="button" class="btn btn-sm btn-primary" @if(!$discord_connection) disabled @endif >Set Discord Avatar</button>
                        @endif
-
-                       >Set Discord Avatar</button>
                     <br><br>
                     </center>
                 </div>
