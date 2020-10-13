@@ -63,6 +63,7 @@
                  <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         @php
+                         $discord_connection = null;
                          $discord_connection = DiscordConnection::where('oaccount', Auth::user()->id)->first();
                         @endphp
                         @if(Auth::user()->avatar_url)
@@ -79,7 +80,9 @@
                        <center>
                           <!-- https://ui-avatars.com/api/?name=Tek Xylo&color=0d6efd&background=2d2d2d -->
                           @if(Auth::user()->avatar_url)
+                          @if($discord_connection)
                           <div class="user-avatar" style="background-image: url('https://cdn.discordapp.com/avatars/{{$discord_connection->discord_id}}/{{$discord_connection->avatar}}.jpg');width:50px;height:50px;"></div>
+                          @endif
                           @else
                           <div class="user-avatar" style="background-image: url('https://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) )}}&s=100');width:50px;height:50px;"></div>
                           @endif<br>
